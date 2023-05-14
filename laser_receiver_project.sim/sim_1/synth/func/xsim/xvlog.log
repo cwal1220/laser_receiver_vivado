@@ -1,0 +1,23 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.sim/sim_1/synth/func/xsim/ad7606c_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module laser_receiver_block
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_ad7606c_0_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_auto_pc_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_axi_gpio_0_1
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_axi_gpio_1_1
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_axi_gpio_4_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_axi_gpio_6_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_axi_uartlite_0_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_low_pass_filter_0_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_low_pass_filter_1_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_low_pass_filter_2_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_low_pass_filter_3_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_processing_system7_0_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_ps7_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_rst_ps7_0_100M_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_wrapper
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_xbar_0
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_xlconcat_0_0
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_1D2IPA0
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sim_1/imports/AD7606/AD7606_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad7606c_tb

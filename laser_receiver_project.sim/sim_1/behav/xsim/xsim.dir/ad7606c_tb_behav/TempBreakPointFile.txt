@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+63,true,"D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sim_1/imports/AD7606/AD7606_tb.v"

@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/sim/laser_receiver_block_axi_gpio_1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'laser_receiver_block_axi_gpio_1_1'

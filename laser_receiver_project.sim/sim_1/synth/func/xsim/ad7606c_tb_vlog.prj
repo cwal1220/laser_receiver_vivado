@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ipshared/ec67/hdl" --include "../../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ipshared/ee60/hdl" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"ad7606c_tb_func_synth.v" \
+"../../../../../laser_receiver_project.srcs/sim_1/imports/AD7606/AD7606_tb.v" \
+
+# Do not sort compile order
+nosort
