@@ -18,6 +18,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/workspace/laser_receiver_pr
 INFO: [VRFC 10-311] analyzing module laser_receiver_block_low_pass_filter_1_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_ad7606c_0_0/sim/laser_receiver_block_ad7606c_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module laser_receiver_block_ad7606c_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_auto_pc_0/sim/laser_receiver_block_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module laser_receiver_block_auto_pc_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.ip_user_files/bd/laser_receiver_block/sim/laser_receiver_block.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module laser_receiver_block
 INFO: [VRFC 10-311] analyzing module laser_receiver_block_ps7_0_axi_periph_0
@@ -31,7 +33,5 @@ INFO: [VRFC 10-311] analyzing module m06_couplers_imp_13KEKZU
 INFO: [VRFC 10-311] analyzing module m07_couplers_imp_1DNPL8I
 INFO: [VRFC 10-311] analyzing module m08_couplers_imp_HO2C57
 INFO: [VRFC 10-311] analyzing module s00_couplers_imp_1D2IPA0
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_auto_pc_0/sim/laser_receiver_block_auto_pc_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module laser_receiver_block_auto_pc_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/hdl/laser_receiver_block_wrapper.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module laser_receiver_block_wrapper

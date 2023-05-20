@@ -64,6 +64,10 @@ module laser_receiver_block_ad7606c_0_0 (
   adc_convst,
   adc_rst,
   adc_sel,
+  adc_os0,
+  adc_os1,
+  adc_os2,
+  adc_wr,
   busy,
   ch_sel,
   out_data1,
@@ -76,7 +80,7 @@ module laser_receiver_block_ad7606c_0_0 (
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 input wire start;
-input wire [15 : 0] adc_db;
+inout wire [15 : 0] adc_db;
 input wire adc_busy;
 output wire adc_cs;
 output wire adc_rd;
@@ -85,6 +89,10 @@ output wire adc_convst;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 adc_rst RST" *)
 output wire adc_rst;
 output wire adc_sel;
+output wire adc_os0;
+output wire adc_os1;
+output wire adc_os2;
+output wire adc_wr;
 output wire busy;
 output wire [3 : 0] ch_sel;
 output wire [15 : 0] out_data1;
@@ -93,8 +101,16 @@ output wire [15 : 0] out_data3;
 output wire [15 : 0] out_data4;
 
   ad7606c #(
-    .MODE_INIT_0(-2),
-    .MODE_INIT_1(-1),
+    .MODE_INIT_0(-10),
+    .MODE_INIT_1(-9),
+    .MODE_INIT_2(-8),
+    .MODE_INIT_3(-7),
+    .MODE_INIT_4(-6),
+    .MODE_INIT_5(-5),
+    .MODE_INIT_6(-4),
+    .MODE_INIT_7(-3),
+    .MODE_INIT_8(-2),
+    .MODE_INIT_9(-1),
     .MODE_IDLE_0(0),
     .MODE_IDLE_1(1),
     .MODE_WAIT_0(2),
@@ -114,6 +130,10 @@ output wire [15 : 0] out_data4;
     .adc_convst(adc_convst),
     .adc_rst(adc_rst),
     .adc_sel(adc_sel),
+    .adc_os0(adc_os0),
+    .adc_os1(adc_os1),
+    .adc_os2(adc_os2),
+    .adc_wr(adc_wr),
     .busy(busy),
     .ch_sel(ch_sel),
     .out_data1(out_data1),

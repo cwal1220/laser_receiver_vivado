@@ -1,8 +1,0 @@
-+====================+===================+================================================================+
-| Launch Setup Clock | Launch Hold Clock | Pin                                                            |
-+====================+===================+================================================================+
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_0/inst/y_delay_reg[2]/D |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_0/inst/y_delay_reg[0]/D |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_1/inst/y_delay_reg[3]/D |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_1/inst/y_delay_reg[2]/D |
-+--------------------+-------------------+----------------------------------------------------------------+

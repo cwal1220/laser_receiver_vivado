@@ -10,8 +10,8 @@ verilog xil_defaultlib  --include "../../../../laser_receiver_project.gen/source
 "../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_0_0/sim/laser_receiver_block_low_pass_filter_0_0.v" \
 "../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_1_0/sim/laser_receiver_block_low_pass_filter_1_0.v" \
 "../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_ad7606c_0_0/sim/laser_receiver_block_ad7606c_0_0.v" \
-"../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/sim/laser_receiver_block.v" \
 "../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_auto_pc_0/sim/laser_receiver_block_auto_pc_0.v" \
+"../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/sim/laser_receiver_block.v" \
 "../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block/hdl/laser_receiver_block_wrapper.v" \
 
 # compile glbl module

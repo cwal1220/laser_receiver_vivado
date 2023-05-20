@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x17012DBD2C99C90C",
+      "boundary_crc": "0xCE5EBBF65FB70337",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block",
       "name": "laser_receiver_block",
@@ -94,11 +94,6 @@
         "left": "0",
         "right": "0"
       },
-      "adc_db": {
-        "direction": "I",
-        "left": "15",
-        "right": "0"
-      },
       "adc_cs": {
         "direction": "O"
       },
@@ -132,6 +127,23 @@
         "direction": "O",
         "left": "0",
         "right": "0"
+      },
+      "adc_db": {
+        "direction": "IO",
+        "left": "15",
+        "right": "0"
+      },
+      "adc_os0": {
+        "direction": "O"
+      },
+      "adc_os2": {
+        "direction": "O"
+      },
+      "adc_os1": {
+        "direction": "O"
+      },
+      "adc_wr": {
+        "direction": "O"
       }
     },
     "components": {
@@ -1865,7 +1877,7 @@
             "direction": "I"
           },
           "adc_db": {
-            "direction": "I",
+            "direction": "IO",
             "left": "15",
             "right": "0"
           },
@@ -1886,6 +1898,18 @@
             "direction": "O"
           },
           "adc_sel": {
+            "direction": "O"
+          },
+          "adc_os0": {
+            "direction": "O"
+          },
+          "adc_os1": {
+            "direction": "O"
+          },
+          "adc_os2": {
+            "direction": "O"
+          },
+          "adc_wr": {
             "direction": "O"
           },
           "busy": {
@@ -1979,6 +2003,12 @@
           "low_pass_filter_1/cutoff_sel"
         ]
       },
+      "Net1": {
+        "ports": [
+          "adc_db",
+          "ad7606c_0/adc_db"
+        ]
+      },
       "ad7606c_0_adc_convst": {
         "ports": [
           "ad7606c_0/adc_convst",
@@ -1989,6 +2019,24 @@
         "ports": [
           "ad7606c_0/adc_cs",
           "adc_cs"
+        ]
+      },
+      "ad7606c_0_adc_os0": {
+        "ports": [
+          "ad7606c_0/adc_os0",
+          "adc_os0"
+        ]
+      },
+      "ad7606c_0_adc_os1": {
+        "ports": [
+          "ad7606c_0/adc_os1",
+          "adc_os1"
+        ]
+      },
+      "ad7606c_0_adc_os2": {
+        "ports": [
+          "ad7606c_0/adc_os2",
+          "adc_os2"
         ]
       },
       "ad7606c_0_adc_rd": {
@@ -2007,6 +2055,12 @@
         "ports": [
           "ad7606c_0/adc_sel",
           "adc_sel"
+        ]
+      },
+      "ad7606c_0_adc_wr": {
+        "ports": [
+          "ad7606c_0/adc_wr",
+          "adc_wr"
         ]
       },
       "ad7606c_0_busy": {
@@ -2044,12 +2098,6 @@
         "ports": [
           "adc_busy",
           "ad7606c_0/adc_busy"
-        ]
-      },
-      "adc_db_0_1": {
-        "ports": [
-          "adc_db",
-          "ad7606c_0/adc_db"
         ]
       },
       "axi_gpio_4_gpio2_io_o": {

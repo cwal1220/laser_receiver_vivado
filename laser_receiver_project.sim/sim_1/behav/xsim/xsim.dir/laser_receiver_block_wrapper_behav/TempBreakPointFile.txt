@@ -1,1 +1,12 @@
 Breakpoint File Version 1.0
+89,true,"D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sources_1/imports/AD7606/AD7606.v"
+83,true,"D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sources_1/imports/AD7606/AD7606.v"
+95,true,"D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sources_1/imports/AD7606/AD7606.v"
+103,true,"D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sources_1/imports/AD7606/AD7606.v"
+109,true,"D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sources_1/imports/AD7606/AD7606.v"
+117,true,"D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sources_1/imports/AD7606/AD7606.v"
+123,true,"D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sources_1/imports/AD7606/AD7606.v"
+131,true,"D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sources_1/imports/AD7606/AD7606.v"
+137,true,"D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sources_1/imports/AD7606/AD7606.v"
+145,true,"D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sources_1/imports/AD7606/AD7606.v"
+216,true,"D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sources_1/imports/AD7606/AD7606.v"

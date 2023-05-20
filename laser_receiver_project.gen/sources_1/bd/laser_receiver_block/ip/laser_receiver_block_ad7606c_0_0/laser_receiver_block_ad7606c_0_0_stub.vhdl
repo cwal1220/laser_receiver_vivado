@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Sun May 14 21:51:05 2023
+-- Date        : Sat May 20 11:18:03 2023
 -- Host        : Chan running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top laser_receiver_block_ad7606c_0_0 -prefix
---               laser_receiver_block_ad7606c_0_0_ laser_receiver_block_ad7606c_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_ad7606c_0_0/laser_receiver_block_ad7606c_0_0_stub.vhdl
 -- Design      : laser_receiver_block_ad7606c_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
@@ -16,13 +16,17 @@ entity laser_receiver_block_ad7606c_0_0 is
   Port ( 
     clk : in STD_LOGIC;
     start : in STD_LOGIC;
-    adc_db : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    adc_db : inout STD_LOGIC_VECTOR ( 15 downto 0 );
     adc_busy : in STD_LOGIC;
     adc_cs : out STD_LOGIC;
     adc_rd : out STD_LOGIC;
     adc_convst : out STD_LOGIC;
     adc_rst : out STD_LOGIC;
     adc_sel : out STD_LOGIC;
+    adc_os0 : out STD_LOGIC;
+    adc_os1 : out STD_LOGIC;
+    adc_os2 : out STD_LOGIC;
+    adc_wr : out STD_LOGIC;
     busy : out STD_LOGIC;
     ch_sel : out STD_LOGIC_VECTOR ( 3 downto 0 );
     out_data1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -37,7 +41,7 @@ architecture stub of laser_receiver_block_ad7606c_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "clk,start,adc_db[15:0],adc_busy,adc_cs,adc_rd,adc_convst,adc_rst,adc_sel,busy,ch_sel[3:0],out_data1[15:0],out_data2[15:0],out_data3[15:0],out_data4[15:0]";
+attribute black_box_pad_pin of stub : architecture is "clk,start,adc_db[15:0],adc_busy,adc_cs,adc_rd,adc_convst,adc_rst,adc_sel,adc_os0,adc_os1,adc_os2,adc_wr,busy,ch_sel[3:0],out_data1[15:0],out_data2[15:0],out_data3[15:0],out_data4[15:0]";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "ad7606c,Vivado 2022.2";
 begin

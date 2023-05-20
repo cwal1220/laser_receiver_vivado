@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Sun May 14 23:16:09 2023
+//Date        : Sat May 20 11:13:39 2023
 //Host        : Chan running 64-bit major release  (build 9200)
 //Command     : generate_target laser_receiver_block_wrapper.bd
 //Design      : laser_receiver_block_wrapper
@@ -18,9 +18,13 @@ module laser_receiver_block_wrapper
     adc_convst,
     adc_cs,
     adc_db,
+    adc_os0,
+    adc_os1,
+    adc_os2,
     adc_rd,
     adc_rst,
     adc_sel,
+    adc_wr,
     gain,
     led_blue,
     uart_rtl_0_rxd,
@@ -32,10 +36,14 @@ module laser_receiver_block_wrapper
   input adc_busy;
   output adc_convst;
   output adc_cs;
-  input [15:0]adc_db;
+  inout [15:0]adc_db;
+  output adc_os0;
+  output adc_os1;
+  output adc_os2;
   output adc_rd;
   output adc_rst;
   output adc_sel;
+  output adc_wr;
   output [0:0]gain;
   output [0:0]led_blue;
   input uart_rtl_0_rxd;
@@ -49,9 +57,13 @@ module laser_receiver_block_wrapper
   wire adc_convst;
   wire adc_cs;
   wire [15:0]adc_db;
+  wire adc_os0;
+  wire adc_os1;
+  wire adc_os2;
   wire adc_rd;
   wire adc_rst;
   wire adc_sel;
+  wire adc_wr;
   wire [0:0]gain;
   wire [0:0]led_blue;
   wire uart_rtl_0_rxd;
@@ -66,9 +78,13 @@ module laser_receiver_block_wrapper
         .adc_convst(adc_convst),
         .adc_cs(adc_cs),
         .adc_db(adc_db),
+        .adc_os0(adc_os0),
+        .adc_os1(adc_os1),
+        .adc_os2(adc_os2),
         .adc_rd(adc_rd),
         .adc_rst(adc_rst),
         .adc_sel(adc_sel),
+        .adc_wr(adc_wr),
         .gain(gain),
         .led_blue(led_blue),
         .uart_rtl_0_rxd(uart_rtl_0_rxd),

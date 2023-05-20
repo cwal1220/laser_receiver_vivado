@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Sun May 14 23:33:07 2023
+| Date             : Sat May 20 11:21:43 2023
 | Host             : Chan running 64-bit major release  (build 9200)
 | Command          : report_power -file laser_receiver_block_wrapper_power_routed.rpt -pb laser_receiver_block_wrapper_power_summary_routed.pb -rpx laser_receiver_block_wrapper_power_routed.rpx
 | Design           : laser_receiver_block_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.845        |
+| Total On-Chip Power (W)  | 0.863        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.725        |
+| Dynamic (W)              | 0.743        |
 | Device Static (W)        | 0.120        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 75.3         |
-| Junction Temperature (C) | 34.7         |
+| Max Ambient (C)          | 75.1         |
+| Junction Temperature (C) | 34.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,20 +52,20 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.011 |        3 |       --- |             --- |
-| Slice Logic             |     0.036 |     6860 |       --- |             --- |
-|   LUT as Logic          |     0.033 |     3002 |     53200 |            5.64 |
+| Clocks                  |     0.010 |        3 |       --- |             --- |
+| Slice Logic             |     0.036 |     6889 |       --- |             --- |
+|   LUT as Logic          |     0.033 |     2999 |     53200 |            5.64 |
 |   CARRY4                |     0.003 |      494 |     13300 |            3.71 |
-|   Register              |    <0.001 |     1866 |    106400 |            1.75 |
+|   Register              |    <0.001 |     1886 |    106400 |            1.77 |
 |   F7/F8 Muxes           |    <0.001 |        1 |     53200 |           <0.01 |
 |   LUT as Shift Register |    <0.001 |       72 |     17400 |            0.41 |
-|   Others                |     0.000 |      268 |       --- |             --- |
-| Signals                 |     0.037 |     6205 |       --- |             --- |
+|   Others                |     0.000 |      270 |       --- |             --- |
+| Signals                 |     0.037 |     6222 |       --- |             --- |
 | DSPs                    |     0.012 |       24 |       220 |           10.91 |
-| I/O                     |    <0.001 |       18 |       125 |           14.40 |
+| I/O                     |     0.018 |       30 |       125 |           24.00 |
 | PS7                     |     0.630 |        1 |       --- |             --- |
 | Static Power            |     0.120 |          |           |                 |
-| Total                   |     0.845 |          |           |                 |
+| Total                   |     0.863 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,8 +76,8 @@ Table of Contents
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.105 |       0.095 |      0.010 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.012 |       0.000 |      0.012 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.013 |       0.001 |      0.012 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -151,18 +151,18 @@ Table of Contents
 +------------------------------+-----------+
 | Name                         | Power (W) |
 +------------------------------+-----------+
-| laser_receiver_block_wrapper |     0.725 |
-|   laser_receiver_block_i     |     0.724 |
+| laser_receiver_block_wrapper |     0.743 |
+|   laser_receiver_block_i     |     0.725 |
 |     axi_gpio_0               |     0.002 |
 |       U0                     |     0.002 |
 |     axi_gpio_1               |     0.002 |
 |       U0                     |     0.002 |
-|     low_pass_filter_0        |     0.021 |
-|       inst                   |     0.021 |
+|     low_pass_filter_0        |     0.020 |
+|       inst                   |     0.020 |
 |     low_pass_filter_1        |     0.020 |
 |       inst                   |     0.020 |
-|     low_pass_filter_2        |     0.020 |
-|       inst                   |     0.020 |
+|     low_pass_filter_2        |     0.021 |
+|       inst                   |     0.021 |
 |     low_pass_filter_3        |     0.020 |
 |       inst                   |     0.020 |
 |     processing_system7_0     |     0.630 |

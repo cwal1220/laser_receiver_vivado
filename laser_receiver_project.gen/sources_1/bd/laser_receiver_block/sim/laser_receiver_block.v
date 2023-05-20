@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Sun May 14 23:16:09 2023
+//Date        : Sat May 20 11:13:39 2023
 //Host        : Chan running 64-bit major release  (build 9200)
 //Command     : generate_target laser_receiver_block.bd
 //Design      : laser_receiver_block
@@ -19,9 +19,13 @@ module laser_receiver_block
     adc_convst,
     adc_cs,
     adc_db,
+    adc_os0,
+    adc_os1,
+    adc_os2,
     adc_rd,
     adc_rst,
     adc_sel,
+    adc_wr,
     gain,
     led_blue,
     uart_rtl_0_rxd,
@@ -33,28 +37,36 @@ module laser_receiver_block
   input adc_busy;
   output adc_convst;
   output adc_cs;
-  input [15:0]adc_db;
+  inout [15:0]adc_db;
+  output adc_os0;
+  output adc_os1;
+  output adc_os2;
   output adc_rd;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.ADC_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.ADC_RST, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) output adc_rst;
   output adc_sel;
+  output adc_wr;
   output [0:0]gain;
   output [0:0]led_blue;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_rtl_0 RxD" *) input uart_rtl_0_rxd;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_rtl_0 TxD" *) output uart_rtl_0_txd;
 
   wire [1:0]Net;
+  wire [15:0]Net1;
   wire ad7606c_0_adc_convst;
   wire ad7606c_0_adc_cs;
+  wire ad7606c_0_adc_os0;
+  wire ad7606c_0_adc_os1;
+  wire ad7606c_0_adc_os2;
   wire ad7606c_0_adc_rd;
   wire ad7606c_0_adc_rst;
   wire ad7606c_0_adc_sel;
+  wire ad7606c_0_adc_wr;
   wire ad7606c_0_busy;
   wire [15:0]ad7606c_0_out_data1;
   wire [15:0]ad7606c_0_out_data2;
   wire [15:0]ad7606c_0_out_data3;
   wire [15:0]ad7606c_0_out_data4;
   wire adc_busy_0_1;
-  wire [15:0]adc_db_0_1;
   wire [0:0]axi_gpio_4_gpio2_io_o;
   wire [0:0]axi_gpio_6_gpio_io_o;
   wire axi_gpio_6_ip2intc_irpt;
@@ -200,10 +212,13 @@ module laser_receiver_block
   assign adc_busy_0_1 = adc_busy;
   assign adc_convst = ad7606c_0_adc_convst;
   assign adc_cs = ad7606c_0_adc_cs;
-  assign adc_db_0_1 = adc_db[15:0];
+  assign adc_os0 = ad7606c_0_adc_os0;
+  assign adc_os1 = ad7606c_0_adc_os1;
+  assign adc_os2 = ad7606c_0_adc_os2;
   assign adc_rd = ad7606c_0_adc_rd;
   assign adc_rst = ad7606c_0_adc_rst;
   assign adc_sel = ad7606c_0_adc_sel;
+  assign adc_wr = ad7606c_0_adc_wr;
   assign axi_uartlite_0_UART_RxD = uart_rtl_0_rxd;
   assign gain[0] = axi_gpio_4_gpio2_io_o;
   assign led_blue[0] = ad7606c_0_busy;
@@ -212,10 +227,14 @@ module laser_receiver_block
        (.adc_busy(adc_busy_0_1),
         .adc_convst(ad7606c_0_adc_convst),
         .adc_cs(ad7606c_0_adc_cs),
-        .adc_db(adc_db_0_1),
+        .adc_db(adc_db[15:0]),
+        .adc_os0(ad7606c_0_adc_os0),
+        .adc_os1(ad7606c_0_adc_os1),
+        .adc_os2(ad7606c_0_adc_os2),
         .adc_rd(ad7606c_0_adc_rd),
         .adc_rst(ad7606c_0_adc_rst),
         .adc_sel(ad7606c_0_adc_sel),
+        .adc_wr(ad7606c_0_adc_wr),
         .busy(ad7606c_0_busy),
         .clk(processing_system7_0_FCLK_CLK0),
         .out_data1(ad7606c_0_out_data1),

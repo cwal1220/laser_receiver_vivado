@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun May 14 23:16:09 2023" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat May 20 11:13:39 2023" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="laser_receiver_block" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -39,11 +39,6 @@
         <CONNECTION INSTANCE="axi_gpio_4" PORT="gpio2_io_o"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="15" NAME="adc_db" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_adc_db">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ad7606c_0" PORT="adc_db"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="O" NAME="adc_cs" SIGIS="undef" SIGNAME="ad7606c_0_adc_cs">
       <CONNECTIONS>
         <CONNECTION INSTANCE="ad7606c_0" PORT="adc_cs"/>
@@ -79,6 +74,31 @@
         <CONNECTION INSTANCE="ad7606c_0" PORT="busy"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="IO" LEFT="15" NAME="adc_db" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_adc_db">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ad7606c_0" PORT="adc_db"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="adc_os0" SIGIS="undef" SIGNAME="ad7606c_0_adc_os0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ad7606c_0" PORT="adc_os0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="adc_os2" SIGIS="undef" SIGNAME="ad7606c_0_adc_os2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ad7606c_0" PORT="adc_os2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="adc_os1" SIGIS="undef" SIGNAME="ad7606c_0_adc_os1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ad7606c_0" PORT="adc_os1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="adc_wr" SIGIS="undef" SIGNAME="ad7606c_0_adc_wr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ad7606c_0" PORT="adc_wr"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -103,8 +123,16 @@
     <MODULE COREREVISION="1" FULLNAME="/ad7606c_0" HWVERSION="1.0" INSTANCE="ad7606c_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ad7606c" VLNV="xilinx.com:module_ref:ad7606c:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="MODE_INIT_0" VALUE="-2"/>
-        <PARAMETER NAME="MODE_INIT_1" VALUE="-1"/>
+        <PARAMETER NAME="MODE_INIT_0" VALUE="-10"/>
+        <PARAMETER NAME="MODE_INIT_1" VALUE="-9"/>
+        <PARAMETER NAME="MODE_INIT_2" VALUE="-8"/>
+        <PARAMETER NAME="MODE_INIT_3" VALUE="-7"/>
+        <PARAMETER NAME="MODE_INIT_4" VALUE="-6"/>
+        <PARAMETER NAME="MODE_INIT_5" VALUE="-5"/>
+        <PARAMETER NAME="MODE_INIT_6" VALUE="-4"/>
+        <PARAMETER NAME="MODE_INIT_7" VALUE="-3"/>
+        <PARAMETER NAME="MODE_INIT_8" VALUE="-2"/>
+        <PARAMETER NAME="MODE_INIT_9" VALUE="-1"/>
         <PARAMETER NAME="MODE_IDLE_0" VALUE="0"/>
         <PARAMETER NAME="MODE_IDLE_1" VALUE="1"/>
         <PARAMETER NAME="MODE_WAIT_0" VALUE="2"/>
@@ -128,7 +156,7 @@
             <CONNECTION INSTANCE="axi_gpio_6" PORT="gpio_io_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="adc_db" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_adc_db">
+        <PORT DIR="IO" LEFT="15" NAME="adc_db" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_adc_db">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="adc_db"/>
           </CONNECTIONS>
@@ -161,6 +189,26 @@
         <PORT DIR="O" NAME="adc_sel" SIGIS="undef" SIGNAME="ad7606c_0_adc_sel">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="adc_sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="adc_os0" SIGIS="undef" SIGNAME="ad7606c_0_adc_os0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="adc_os0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="adc_os1" SIGIS="undef" SIGNAME="ad7606c_0_adc_os1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="adc_os1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="adc_os2" SIGIS="undef" SIGNAME="ad7606c_0_adc_os2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="adc_os2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="adc_wr" SIGIS="undef" SIGNAME="ad7606c_0_adc_wr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="adc_wr"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="busy" SIGIS="undef" SIGNAME="ad7606c_0_busy">

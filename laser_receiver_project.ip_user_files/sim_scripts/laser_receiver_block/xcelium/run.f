@@ -102,13 +102,13 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/laser_receiver_block/ip/laser_receiver_block_ad7606c_0_0/sim/laser_receiver_block_ad7606c_0_0.v" \
-  "../../../bd/laser_receiver_block/sim/laser_receiver_block.v" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_27 \
   "../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/laser_receiver_block/ip/laser_receiver_block_auto_pc_0/sim/laser_receiver_block_auto_pc_0.v" \
+  "../../../bd/laser_receiver_block/sim/laser_receiver_block.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v
