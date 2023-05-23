@@ -8,10 +8,14 @@ proc init_gui { IPINST } {
   ipgui::add_param $IPINST -name "MODE_CONV_0" -parent ${Page_0}
   ipgui::add_param $IPINST -name "MODE_CONV_1" -parent ${Page_0}
   ipgui::add_param $IPINST -name "MODE_CONV_2" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "MODE_CONV_3" -parent ${Page_0}
   ipgui::add_param $IPINST -name "MODE_IDLE_0" -parent ${Page_0}
   ipgui::add_param $IPINST -name "MODE_IDLE_1" -parent ${Page_0}
   ipgui::add_param $IPINST -name "MODE_INIT_0" -parent ${Page_0}
   ipgui::add_param $IPINST -name "MODE_INIT_1" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "MODE_INIT_10" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "MODE_INIT_11" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "MODE_INIT_12" -parent ${Page_0}
   ipgui::add_param $IPINST -name "MODE_INIT_2" -parent ${Page_0}
   ipgui::add_param $IPINST -name "MODE_INIT_3" -parent ${Page_0}
   ipgui::add_param $IPINST -name "MODE_INIT_4" -parent ${Page_0}
@@ -71,6 +75,15 @@ proc validate_PARAM_VALUE.MODE_CONV_2 { PARAM_VALUE.MODE_CONV_2 } {
 	return true
 }
 
+proc update_PARAM_VALUE.MODE_CONV_3 { PARAM_VALUE.MODE_CONV_3 } {
+	# Procedure called to update MODE_CONV_3 when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.MODE_CONV_3 { PARAM_VALUE.MODE_CONV_3 } {
+	# Procedure called to validate MODE_CONV_3
+	return true
+}
+
 proc update_PARAM_VALUE.MODE_IDLE_0 { PARAM_VALUE.MODE_IDLE_0 } {
 	# Procedure called to update MODE_IDLE_0 when any of the dependent parameters in the arguments change
 }
@@ -104,6 +117,33 @@ proc update_PARAM_VALUE.MODE_INIT_1 { PARAM_VALUE.MODE_INIT_1 } {
 
 proc validate_PARAM_VALUE.MODE_INIT_1 { PARAM_VALUE.MODE_INIT_1 } {
 	# Procedure called to validate MODE_INIT_1
+	return true
+}
+
+proc update_PARAM_VALUE.MODE_INIT_10 { PARAM_VALUE.MODE_INIT_10 } {
+	# Procedure called to update MODE_INIT_10 when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.MODE_INIT_10 { PARAM_VALUE.MODE_INIT_10 } {
+	# Procedure called to validate MODE_INIT_10
+	return true
+}
+
+proc update_PARAM_VALUE.MODE_INIT_11 { PARAM_VALUE.MODE_INIT_11 } {
+	# Procedure called to update MODE_INIT_11 when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.MODE_INIT_11 { PARAM_VALUE.MODE_INIT_11 } {
+	# Procedure called to validate MODE_INIT_11
+	return true
+}
+
+proc update_PARAM_VALUE.MODE_INIT_12 { PARAM_VALUE.MODE_INIT_12 } {
+	# Procedure called to update MODE_INIT_12 when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.MODE_INIT_12 { PARAM_VALUE.MODE_INIT_12 } {
+	# Procedure called to validate MODE_INIT_12
 	return true
 }
 
@@ -248,6 +288,21 @@ proc update_MODELPARAM_VALUE.MODE_INIT_9 { MODELPARAM_VALUE.MODE_INIT_9 PARAM_VA
 	set_property value [get_property value ${PARAM_VALUE.MODE_INIT_9}] ${MODELPARAM_VALUE.MODE_INIT_9}
 }
 
+proc update_MODELPARAM_VALUE.MODE_INIT_10 { MODELPARAM_VALUE.MODE_INIT_10 PARAM_VALUE.MODE_INIT_10 } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.MODE_INIT_10}] ${MODELPARAM_VALUE.MODE_INIT_10}
+}
+
+proc update_MODELPARAM_VALUE.MODE_INIT_11 { MODELPARAM_VALUE.MODE_INIT_11 PARAM_VALUE.MODE_INIT_11 } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.MODE_INIT_11}] ${MODELPARAM_VALUE.MODE_INIT_11}
+}
+
+proc update_MODELPARAM_VALUE.MODE_INIT_12 { MODELPARAM_VALUE.MODE_INIT_12 PARAM_VALUE.MODE_INIT_12 } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.MODE_INIT_12}] ${MODELPARAM_VALUE.MODE_INIT_12}
+}
+
 proc update_MODELPARAM_VALUE.MODE_IDLE_0 { MODELPARAM_VALUE.MODE_IDLE_0 PARAM_VALUE.MODE_IDLE_0 } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	set_property value [get_property value ${PARAM_VALUE.MODE_IDLE_0}] ${MODELPARAM_VALUE.MODE_IDLE_0}
@@ -276,6 +331,11 @@ proc update_MODELPARAM_VALUE.MODE_CONV_1 { MODELPARAM_VALUE.MODE_CONV_1 PARAM_VA
 proc update_MODELPARAM_VALUE.MODE_CONV_2 { MODELPARAM_VALUE.MODE_CONV_2 PARAM_VALUE.MODE_CONV_2 } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	set_property value [get_property value ${PARAM_VALUE.MODE_CONV_2}] ${MODELPARAM_VALUE.MODE_CONV_2}
+}
+
+proc update_MODELPARAM_VALUE.MODE_CONV_3 { MODELPARAM_VALUE.MODE_CONV_3 PARAM_VALUE.MODE_CONV_3 } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.MODE_CONV_3}] ${MODELPARAM_VALUE.MODE_CONV_3}
 }
 
 proc update_MODELPARAM_VALUE.MODE_POST_0 { MODELPARAM_VALUE.MODE_POST_0 PARAM_VALUE.MODE_POST_0 } {

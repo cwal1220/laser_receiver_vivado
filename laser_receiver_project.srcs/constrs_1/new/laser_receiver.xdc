@@ -1,6 +1,8 @@
 # LED
 set_property -dict { PACKAGE_PIN R14   IOSTANDARD LVCMOS33 } [get_ports { led1 }]; #LED1
 set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33 } [get_ports { led2 }]; #LED2
+set_property -dict { PACKAGE_PIN N16    IOSTANDARD LVCMOS33 } [get_ports { led3 }]; #IO_L21N_T3_DQS_AD14N_35 Sch=LED2
+set_property -dict { PACKAGE_PIN M14    IOSTANDARD LVCMOS33 } [get_ports { led4 }]; #IO_L23P_T3_35 Sch=LED3
 
 # GPIO
 # set_property -dict { PACKAGE_PIN R19   IOSTANDARD LVCMOS33 } [get_ports { gain }]; #GAIN
@@ -78,7 +80,7 @@ set_property -dict { PACKAGE_PIN M20   IOSTANDARD LVCMOS33 } [get_ports { sw }];
 
 # Led Test
 set_property -dict { PACKAGE_PIN G14    IOSTANDARD LVCMOS33 } [get_ports { led_blue }]; #IO_0_35 Sch=LED5_B
-
+set_property -dict { PACKAGE_PIN G17    IOSTANDARD LVCMOS33 } [get_ports { led_green }]; #IO_L22P_T3_AD7P_35 Sch=LED5_G
 
 # Bitstream Configuration
 # ------------------------------------------------------------------------------
