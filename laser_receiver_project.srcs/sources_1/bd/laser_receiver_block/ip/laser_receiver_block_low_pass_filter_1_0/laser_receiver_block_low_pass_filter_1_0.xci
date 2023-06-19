@@ -13,6 +13,12 @@
         "MODE_CUTOFF_1KHZ": [ { "value": "\"01\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
         "MODE_CUTOFF_5KHZ": [ { "value": "\"10\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
         "MODE_CUTOFF_10KHZ": [ { "value": "\"11\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "COEFF_A_1K": [ { "value": "68", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "COEFF_B_1K": [ { "value": "932", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "COEFF_A_5K": [ { "value": "269", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "COEFF_B_5K": [ { "value": "731", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "COEFF_A_10K": [ { "value": "466", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "COEFF_B_10K": [ { "value": "534", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "Component_Name": [ { "value": "laser_receiver_block_low_pass_filter_1_0", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
@@ -20,7 +26,13 @@
         "MODE_CUTOFF_OFF": [ { "value": "\"00\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "MODE_CUTOFF_1KHZ": [ { "value": "\"01\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "MODE_CUTOFF_5KHZ": [ { "value": "\"10\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
-        "MODE_CUTOFF_10KHZ": [ { "value": "\"11\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ]
+        "MODE_CUTOFF_10KHZ": [ { "value": "\"11\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "COEFF_A_1K": [ { "value": "68", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "COEFF_B_1K": [ { "value": "932", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "COEFF_A_5K": [ { "value": "269", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "COEFF_B_5K": [ { "value": "731", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "COEFF_A_10K": [ { "value": "466", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "COEFF_B_10K": [ { "value": "534", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
@@ -44,8 +56,8 @@
         "OUTPUTDIR": [ { "value": "../../../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2022.2" } ],
-        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+        "SWVERSION": [ { "value": "2022.2.2" } ],
+        "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },
     "boundary": {
@@ -61,7 +73,7 @@
           "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
           "mode": "slave",
           "parameters": {
-            "FREQ_HZ": [ { "value": "100000000", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "1e+08", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "laser_receiver_block_processing_system7_0_0_FCLK_CLK0", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],

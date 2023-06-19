@@ -33,7 +33,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c7cadbf8</spirit:value>
+            <spirit:value>84b28bca</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -46,7 +46,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c7cadbf8</spirit:value>
+            <spirit:value>84b28bca</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -151,6 +151,36 @@
         <spirit:displayName>Mode Cutoff 10khz</spirit:displayName>
         <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.MODE_CUTOFF_10KHZ" spirit:bitStringLength="2">&quot;11&quot;</spirit:value>
       </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>COEFF_A_1K</spirit:name>
+        <spirit:displayName>Coeff A 1k</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_A_1K">68</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>COEFF_B_1K</spirit:name>
+        <spirit:displayName>Coeff B 1k</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_B_1K">932</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>COEFF_A_5K</spirit:name>
+        <spirit:displayName>Coeff A 5k</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_A_5K">269</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>COEFF_B_5K</spirit:name>
+        <spirit:displayName>Coeff B 5k</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_B_5K">731</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>COEFF_A_10K</spirit:name>
+        <spirit:displayName>Coeff A 10k</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_A_10K">466</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>COEFF_B_10K</spirit:name>
+        <spirit:displayName>Coeff B 10k</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_B_10K">534</spirit:value>
+      </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
   <spirit:fileSets>
@@ -159,7 +189,7 @@
       <spirit:file>
         <spirit:name>xgui/low_pass_filter_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_1f3f7826</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_1a8b2236</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -192,6 +222,36 @@
       <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MODE_CUTOFF_10KHZ" spirit:bitStringLength="2">&quot;11&quot;</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
+      <spirit:name>COEFF_A_1K</spirit:name>
+      <spirit:displayName>Coeff A 1k</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_A_1K">68</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>COEFF_B_1K</spirit:name>
+      <spirit:displayName>Coeff B 1k</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_B_1K">932</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>COEFF_A_5K</spirit:name>
+      <spirit:displayName>Coeff A 5k</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_A_5K">269</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>COEFF_B_5K</spirit:name>
+      <spirit:displayName>Coeff B 5k</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_B_5K">731</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>COEFF_A_10K</spirit:name>
+      <spirit:displayName>Coeff A 10k</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_A_10K">466</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>COEFF_B_10K</spirit:name>
+      <spirit:displayName>Coeff B 10k</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_B_10K">534</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">low_pass_filter_v1_0</spirit:value>
     </spirit:parameter>
@@ -211,10 +271,10 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2023-03-30T15:41:34Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2023-06-05T02:11:41Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2022.2.2</xilinx:xilinxVersion>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

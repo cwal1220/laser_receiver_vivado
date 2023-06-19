@@ -1,107 +1,110 @@
 #-----------------------------------------------------------
-# Vivado v2022.2 (64-bit)
-# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
-# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed May 24 02:39:33 2023
-# Process ID: 28144
-# Current directory: D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.runs/impl_1
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 20:00:34 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Mon Jun  5 17:54:41 2023
+# Process ID: 27556
+# Current directory: D:/Project/laser_receiver_project/laser_receiver_project.runs/impl_1
 # Command line: vivado.exe -log laser_receiver_block_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source laser_receiver_block_wrapper.tcl -notrace
-# Log file: D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper.vdi
-# Journal file: D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.runs/impl_1\vivado.jou
-# Running On: Chan, OS: Windows, CPU Frequency: 3504 MHz, CPU Physical cores: 8, Host memory: 34147 MB
+# Log file: D:/Project/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper.vdi
+# Journal file: D:/Project/laser_receiver_project/laser_receiver_project.runs/impl_1\vivado.jou
+# Running On: CHAN, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16837 MB
 #-----------------------------------------------------------
 source laser_receiver_block_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1185.871 ; gain = 157.559
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1236.996 ; gain = 46.441
 Command: link_design -top laser_receiver_block_wrapper -part xc7z020clg400-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_ad7606c_0_0/laser_receiver_block_ad7606c_0_0.dcp' for cell 'laser_receiver_block_i/ad7606c_0'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1.dcp' for cell 'laser_receiver_block_i/axi_gpio_0'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1.dcp' for cell 'laser_receiver_block_i/axi_gpio_1'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_4_0/laser_receiver_block_axi_gpio_4_0.dcp' for cell 'laser_receiver_block_i/axi_gpio_4'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_6_0/laser_receiver_block_axi_gpio_6_0.dcp' for cell 'laser_receiver_block_i/axi_gpio_6'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_uartlite_0_0/laser_receiver_block_axi_uartlite_0_0.dcp' for cell 'laser_receiver_block_i/axi_uartlite_0'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_0_0/laser_receiver_block_low_pass_filter_0_0.dcp' for cell 'laser_receiver_block_i/low_pass_filter_0'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_1_0/laser_receiver_block_low_pass_filter_1_0.dcp' for cell 'laser_receiver_block_i/low_pass_filter_1'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_2_0/laser_receiver_block_low_pass_filter_2_0.dcp' for cell 'laser_receiver_block_i/low_pass_filter_2'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_3_0/laser_receiver_block_low_pass_filter_3_0.dcp' for cell 'laser_receiver_block_i/low_pass_filter_3'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_processing_system7_0_0/laser_receiver_block_processing_system7_0_0.dcp' for cell 'laser_receiver_block_i/processing_system7_0'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_rst_ps7_0_100M_0/laser_receiver_block_rst_ps7_0_100M_0.dcp' for cell 'laser_receiver_block_i/rst_ps7_0_100M'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_xbar_0/laser_receiver_block_xbar_0.dcp' for cell 'laser_receiver_block_i/ps7_0_axi_periph/xbar'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_auto_pc_0/laser_receiver_block_auto_pc_0.dcp' for cell 'laser_receiver_block_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1525.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1647.484 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 543 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_processing_system7_0_0/laser_receiver_block_processing_system7_0_0.xdc] for cell 'laser_receiver_block_i/processing_system7_0/inst'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_processing_system7_0_0/laser_receiver_block_processing_system7_0_0.xdc] for cell 'laser_receiver_block_i/processing_system7_0/inst'
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_uartlite_0_0/laser_receiver_block_axi_uartlite_0_0_board.xdc] for cell 'laser_receiver_block_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_uartlite_0_0/laser_receiver_block_axi_uartlite_0_0_board.xdc] for cell 'laser_receiver_block_i/axi_uartlite_0/U0'
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_uartlite_0_0/laser_receiver_block_axi_uartlite_0_0.xdc] for cell 'laser_receiver_block_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_uartlite_0_0/laser_receiver_block_axi_uartlite_0_0.xdc] for cell 'laser_receiver_block_i/axi_uartlite_0/U0'
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_rst_ps7_0_100M_0/laser_receiver_block_rst_ps7_0_100M_0_board.xdc] for cell 'laser_receiver_block_i/rst_ps7_0_100M/U0'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_rst_ps7_0_100M_0/laser_receiver_block_rst_ps7_0_100M_0_board.xdc] for cell 'laser_receiver_block_i/rst_ps7_0_100M/U0'
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_rst_ps7_0_100M_0/laser_receiver_block_rst_ps7_0_100M_0.xdc] for cell 'laser_receiver_block_i/rst_ps7_0_100M/U0'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_rst_ps7_0_100M_0/laser_receiver_block_rst_ps7_0_100M_0.xdc] for cell 'laser_receiver_block_i/rst_ps7_0_100M/U0'
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_4_0/laser_receiver_block_axi_gpio_4_0_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_4/U0'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_4_0/laser_receiver_block_axi_gpio_4_0_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_4/U0'
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_4_0/laser_receiver_block_axi_gpio_4_0.xdc] for cell 'laser_receiver_block_i/axi_gpio_4/U0'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_4_0/laser_receiver_block_axi_gpio_4_0.xdc] for cell 'laser_receiver_block_i/axi_gpio_4/U0'
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_6_0/laser_receiver_block_axi_gpio_6_0_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_6/U0'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_6_0/laser_receiver_block_axi_gpio_6_0_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_6/U0'
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_6_0/laser_receiver_block_axi_gpio_6_0.xdc] for cell 'laser_receiver_block_i/axi_gpio_6/U0'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_6_0/laser_receiver_block_axi_gpio_6_0.xdc] for cell 'laser_receiver_block_i/axi_gpio_6/U0'
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_0/U0'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_0/U0'
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1.xdc] for cell 'laser_receiver_block_i/axi_gpio_0/U0'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1.xdc] for cell 'laser_receiver_block_i/axi_gpio_0/U0'
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_1/U0'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_1/U0'
-Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1.xdc] for cell 'laser_receiver_block_i/axi_gpio_1/U0'
-Finished Parsing XDC File [d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1.xdc] for cell 'laser_receiver_block_i/axi_gpio_1/U0'
-Parsing XDC File [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc]
-WARNING: [Vivado 12-584] No ports matched 'mem_sclk'. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:10]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:10]
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_processing_system7_0_0/laser_receiver_block_processing_system7_0_0.xdc] for cell 'laser_receiver_block_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_processing_system7_0_0/laser_receiver_block_processing_system7_0_0.xdc] for cell 'laser_receiver_block_i/processing_system7_0/inst'
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_uartlite_0_0/laser_receiver_block_axi_uartlite_0_0_board.xdc] for cell 'laser_receiver_block_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_uartlite_0_0/laser_receiver_block_axi_uartlite_0_0_board.xdc] for cell 'laser_receiver_block_i/axi_uartlite_0/U0'
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_uartlite_0_0/laser_receiver_block_axi_uartlite_0_0.xdc] for cell 'laser_receiver_block_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_uartlite_0_0/laser_receiver_block_axi_uartlite_0_0.xdc] for cell 'laser_receiver_block_i/axi_uartlite_0/U0'
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_rst_ps7_0_100M_0/laser_receiver_block_rst_ps7_0_100M_0_board.xdc] for cell 'laser_receiver_block_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_rst_ps7_0_100M_0/laser_receiver_block_rst_ps7_0_100M_0_board.xdc] for cell 'laser_receiver_block_i/rst_ps7_0_100M/U0'
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_rst_ps7_0_100M_0/laser_receiver_block_rst_ps7_0_100M_0.xdc] for cell 'laser_receiver_block_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_rst_ps7_0_100M_0/laser_receiver_block_rst_ps7_0_100M_0.xdc] for cell 'laser_receiver_block_i/rst_ps7_0_100M/U0'
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_4_0/laser_receiver_block_axi_gpio_4_0_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_4/U0'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_4_0/laser_receiver_block_axi_gpio_4_0_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_4/U0'
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_4_0/laser_receiver_block_axi_gpio_4_0.xdc] for cell 'laser_receiver_block_i/axi_gpio_4/U0'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_4_0/laser_receiver_block_axi_gpio_4_0.xdc] for cell 'laser_receiver_block_i/axi_gpio_4/U0'
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_6_0/laser_receiver_block_axi_gpio_6_0_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_6/U0'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_6_0/laser_receiver_block_axi_gpio_6_0_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_6/U0'
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_6_0/laser_receiver_block_axi_gpio_6_0.xdc] for cell 'laser_receiver_block_i/axi_gpio_6/U0'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_6_0/laser_receiver_block_axi_gpio_6_0.xdc] for cell 'laser_receiver_block_i/axi_gpio_6/U0'
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_0/U0'
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1.xdc] for cell 'laser_receiver_block_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1.xdc] for cell 'laser_receiver_block_i/axi_gpio_0/U0'
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_1/U0'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1_board.xdc] for cell 'laser_receiver_block_i/axi_gpio_1/U0'
+Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1.xdc] for cell 'laser_receiver_block_i/axi_gpio_1/U0'
+Finished Parsing XDC File [d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1.xdc] for cell 'laser_receiver_block_i/axi_gpio_1/U0'
+Parsing XDC File [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led1'. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:5]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'mem_do'. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:11]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'led2'. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:6]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'mem_di'. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:12]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'led3'. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:7]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'mem_cs'. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:13]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'led4'. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:8]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'adc_frstdata'. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:72]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'mem_sclk'. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:13]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw'. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:79]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'mem_do'. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:14]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Netlist 29-154] Cannot set property 'CONFIG_MODE' because incorrect value 'SPIx4' specified. Expecting type 'enum' with possible values of 'B_SCAN'. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'mem_di'. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mem_cs'. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_frstdata'. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw'. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_blue'. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Netlist 29-154] Cannot set property 'CONFIG_MODE' because incorrect value 'SPIx4' specified. Expecting type 'enum' with possible values of 'B_SCAN'. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:93]
 Resolution: Please check the value of the property and set to a correct value.
-CRITICAL WARNING: [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.SPI_BUSWIDTH' because the property does not exist. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:91]
+CRITICAL WARNING: [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.SPI_BUSWIDTH' because the property does not exist. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:94]
 Resolution: Create this property using create_property command before setting it.
-CRITICAL WARNING: [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.CONFIGRATE' because the property does not exist. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:93]
+CRITICAL WARNING: [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.CONFIGRATE' because the property does not exist. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:96]
 Resolution: Create this property using create_property command before setting it.
-CRITICAL WARNING: [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.SPI_FALL_EDGE' because the property does not exist. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:94]
+CRITICAL WARNING: [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.SPI_FALL_EDGE' because the property does not exist. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:97]
 Resolution: Create this property using create_property command before setting it.
-CRITICAL WARNING: [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.SPI_32BIT_ADDR' because the property does not exist. [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:96]
+CRITICAL WARNING: [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.SPI_32BIT_ADDR' because the property does not exist. [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc:99]
 Resolution: Create this property using create_property command before setting it.
-Finished Parsing XDC File [D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc]
+Finished Parsing XDC File [D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1683.762 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1801.777 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
 
-25 Infos, 6 Warnings, 11 Critical Warnings and 0 Errors encountered.
+10 Infos, 11 Warnings, 16 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1683.762 ; gain = 591.418
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1801.777 ; gain = 564.781
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -109,60 +112,59 @@ Running DRC as a precondition to command opt_design
 
 Starting DRC Task
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Project 1-461] DRC finished with 0 Errors, 16 Warnings
+INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.817 . Memory (MB): peak = 1723.289 ; gain = 39.527
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1825.266 ; gain = 23.488
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 170cb2fc9
+Ending Cache Timing Information Task | Checksum: 180436112
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2262.156 ; gain = 538.867
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2364.012 ; gain = 538.746
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1592f1f71
+Phase 1 Retarget | Checksum: 1511d1063
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.258 . Memory (MB): peak = 2609.586 ; gain = 0.000
-INFO: [Opt 31-389] Phase Retarget created 132 cells and removed 177 cells
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.285 . Memory (MB): peak = 2712.203 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 2 cells and removed 42 cells
 INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
-INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
-Phase 2 Constant propagation | Checksum: 1f700fa60
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 236885fda
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.316 . Memory (MB): peak = 2609.586 ; gain = 0.000
-INFO: [Opt 31-389] Phase Constant propagation created 53 cells and removed 120 cells
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.341 . Memory (MB): peak = 2712.203 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 1d132716e
+Phase 3 Sweep | Checksum: 16f6a7aa6
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.487 . Memory (MB): peak = 2609.586 ; gain = 0.000
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 93 cells
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.499 . Memory (MB): peak = 2712.203 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 1d132716e
+Phase 4 BUFG optimization | Checksum: 16f6a7aa6
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.550 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.581 . Memory (MB): peak = 2712.203 ; gain = 0.000
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 1d132716e
+Phase 5 Shift Register Optimization | Checksum: 16f6a7aa6
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.560 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.592 . Memory (MB): peak = 2712.203 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-INFO: [Opt 31-1287] Pulled Inverter laser_receiver_block_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/reg_slice_r/skid_buffer[1]_i_1 into driver instance laser_receiver_block_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/reg_slice_r/skid_buffer[34]_i_2, which resulted in an inversion of 21 pins
-Phase 6 Post Processing Netlist | Checksum: 1c004eb4c
+Phase 6 Post Processing Netlist | Checksum: 16f6a7aa6
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.580 . Memory (MB): peak = 2609.586 ; gain = 0.000
-INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.609 . Memory (MB): peak = 2712.203 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
 
@@ -170,54 +172,54 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |             132  |             177  |                                              1  |
-|  Constant propagation         |              53  |             120  |                                              0  |
-|  Sweep                        |               0  |              93  |                                              0  |
+|  Retarget                     |               2  |              42  |                                              1  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
-|  Post Processing Netlist      |               0  |               1  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
 -------------------------------------------------------------------------------------------------------------------------
 
 
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2609.586 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 1792684cb
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2712.203 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 103051821
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.778 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.816 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: 1792684cb
+Ending Power Optimization Task | Checksum: 103051821
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 1792684cb
+Ending Final Cleanup Task | Checksum: 103051821
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2609.586 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 1792684cb
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2712.203 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 103051821
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2712.203 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-44 Infos, 6 Warnings, 11 Critical Warnings and 0 Errors encountered.
+28 Infos, 11 Warnings, 16 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2609.586 ; gain = 925.824
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2712.203 ; gain = 910.426
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2609.586 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_opt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2712.203 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Project/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file laser_receiver_block_wrapper_drc_opted.rpt -pb laser_receiver_block_wrapper_drc_opted.pb -rpx laser_receiver_block_wrapper_drc_opted.rpx
 Command: report_drc -file laser_receiver_block_wrapper_drc_opted.rpt -pb laser_receiver_block_wrapper_drc_opted.pb -rpx laser_receiver_block_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_drc_opted.rpt.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/Project/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_drc_opted.rpt.
 report_drc completed successfully
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
@@ -227,7 +229,7 @@ INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 Running DRC as a precondition to command place_design
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 16 Warnings
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
 Starting Placer Task
@@ -236,90 +238,90 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2609.586 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 95fb2163
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2712.203 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: f4666f35
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2609.586 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2712.203 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1593b9e32
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 12bac107c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.625 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.793 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 1fc581893
+Phase 1.3 Build Placer Netlist Model | Checksum: 18b518810
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 1fc581893
+Phase 1.4 Constrain Clocks/Macros | Checksum: 18b518810
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2609.586 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 1fc581893
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2712.203 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 18b518810
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 193b630f2
+Phase 2.1 Floorplanning | Checksum: 1faac9d04
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 19f4ecc78
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 17fdde455
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 2.3 Post-Processing in Floorplanning
-Phase 2.3 Post-Processing in Floorplanning | Checksum: 19f4ecc78
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 17fdde455
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 2.4 Global Placement Core
 
 Phase 2.4.1 UpdateTiming Before Physical Synthesis
-Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: f2cbdca3
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 1441107da
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 2.4.2 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 135 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 51 LUT instances to create LUTNM shape
 INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
-INFO: [Physopt 32-1138] End 1 Pass. Optimized 56 nets or LUTs. Breaked 0 LUT, combined 56 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 18 nets or LUTs. Breaked 0 LUT, combined 18 existing LUTs and moved 0 existing LUT
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-457] Pass 1. Identified 12 candidate cells for DSP register optimization.
-INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1__1. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1__0. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1__1. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1__1. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1__0. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1__1. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1__0. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1__0. 16 registers were pushed out.
 INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1__1. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1__1. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1__0. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1__0. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1__0. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1__0. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1__1. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1__1. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1. 16 registers were pushed out.
 INFO: [Physopt 32-457] Pass 2. Identified 12 candidate cells for DSP register optimization.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1__1. No change.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1. No change.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1__1. No change.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1__0. No change.
 INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1__1. No change.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1. No change.
 INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1__1. No change.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1__0. No change.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1__0. No change.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1__0. No change.
 INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1. No change.
 INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1__0. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1__1. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1__1. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1__0. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1__0. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1__0. No change.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 12 nets or cells. Created 192 new cells, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2712.203 ; gain = 0.000
 INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
@@ -330,7 +332,7 @@ INFO: [Physopt 32-846] No candidate cells for URAM register optimization found i
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -339,7 +341,7 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |            0  |             56  |                    56  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |            0  |             18  |                    18  |           0  |           1  |  00:00:00  |
 |  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |          192  |              0  |                    12  |           0  |           1  |  00:00:02  |
@@ -348,69 +350,69 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |          192  |             56  |                    68  |           0  |           9  |  00:00:02  |
+|  Total                                            |          192  |             18  |                    30  |           0  |           9  |  00:00:02  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.4.2 Physical Synthesis In Placer | Checksum: 10c15223d
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 22fd50443
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2609.586 ; gain = 0.000
-Phase 2.4 Global Placement Core | Checksum: 101d474ba
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2712.203 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 2a015d111
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2609.586 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 101d474ba
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2712.203 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 2a015d111
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1d1d3480e
+Phase 3.1 Commit Multi Column Macros | Checksum: 2bca7de90
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 18a697863
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 216ebc188
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1760ff3b4
+Phase 3.3 Area Swap Optimization | Checksum: 24b812e14
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 13c345f57
+Phase 3.4 Pipeline Register Optimization | Checksum: 1f624c49c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 139f9ca84
+Phase 3.5 Fast Optimization | Checksum: 169927c1a
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 26c222e48
+Phase 3.6 Small Shape Detail Placement | Checksum: 1d6e1ba3b
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 263b9e8be
+Phase 3.7 Re-assign LUT pins | Checksum: 24d81600e
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 1a9df73db
+Phase 3.8 Pipeline Register Optimization | Checksum: 25ecbef43
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 1c2d7ac57
+Phase 3.9 Fast Optimization | Checksum: 1665d4ccf
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2609.586 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 1c2d7ac57
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 2712.203 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1665d4ccf
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2609.586 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 2712.203 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -418,7 +420,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 1a6fc6b52
+Post Placement Optimization Initialization | Checksum: 185190ef3
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -426,33 +428,33 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.584 | TNS=-2776.778 |
-Phase 1 Physical Synthesis Initialization | Checksum: 1a9f2986d
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.471 | TNS=-2468.616 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1b15c7f52
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 2615.219 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.192 . Memory (MB): peak = 2721.672 ; gain = 0.000
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Ending Physical Synthesis Task | Checksum: 23a9027af
+Ending Physical Synthesis Task | Checksum: 18188ff0b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.175 . Memory (MB): peak = 2615.219 ; gain = 0.000
-Phase 4.1.1.1 BUFG Insertion | Checksum: 1a6fc6b52
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.231 . Memory (MB): peak = 2721.672 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 185190ef3
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2615.219 ; gain = 5.633
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 2721.672 ; gain = 9.469
 
 Phase 4.1.1.2 Post Placement Timing Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-11.044. For the most accurate timing information please run report_timing.
-Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1aab319bd
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-9.619. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1d9b0a735
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:56 . Memory (MB): peak = 2615.219 ; gain = 5.633
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2721.672 ; gain = 9.469
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:56 . Memory (MB): peak = 2615.219 ; gain = 5.633
-Phase 4.1 Post Commit Optimization | Checksum: 1aab319bd
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2721.672 ; gain = 9.469
+Phase 4.1 Post Commit Optimization | Checksum: 1d9b0a735
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:56 . Memory (MB): peak = 2615.219 ; gain = 5.633
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2721.672 ; gain = 9.469
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 1aab319bd
+Phase 4.2 Post Placement Cleanup | Checksum: 1d9b0a735
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:56 . Memory (MB): peak = 2615.219 ; gain = 5.633
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2721.672 ; gain = 9.469
 
 Phase 4.3 Placer Reporting
 
@@ -464,364 +466,475 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |___________|___________________|___________________|
 |      North|                1x1|                1x1|
 |___________|___________________|___________________|
-|      South|                1x1|                4x4|
+|      South|                1x1|                2x2|
 |___________|___________________|___________________|
 |       East|                1x1|                1x1|
 |___________|___________________|___________________|
 |       West|                1x1|                1x1|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 1aab319bd
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1d9b0a735
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:56 . Memory (MB): peak = 2615.219 ; gain = 5.633
-Phase 4.3 Placer Reporting | Checksum: 1aab319bd
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2721.672 ; gain = 9.469
+Phase 4.3 Placer Reporting | Checksum: 1d9b0a735
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:56 . Memory (MB): peak = 2615.219 ; gain = 5.633
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2721.672 ; gain = 9.469
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2615.219 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2721.672 ; gain = 0.000
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:56 . Memory (MB): peak = 2615.219 ; gain = 5.633
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17a56b5cf
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2721.672 ; gain = 9.469
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2174bde72
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:56 . Memory (MB): peak = 2615.219 ; gain = 5.633
-Ending Placer Task | Checksum: b3470374
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2721.672 ; gain = 9.469
+Ending Placer Task | Checksum: 1b948cddf
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:56 . Memory (MB): peak = 2615.219 ; gain = 5.633
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2721.672 ; gain = 9.469
 INFO: [Common 17-83] Releasing license: Implementation
-109 Infos, 6 Warnings, 11 Critical Warnings and 0 Errors encountered.
+93 Infos, 11 Warnings, 16 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:57 . Memory (MB): peak = 2615.219 ; gain = 5.633
+place_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:38 . Memory (MB): peak = 2721.672 ; gain = 9.469
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2615.219 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_placed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.684 . Memory (MB): peak = 2721.672 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Project/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file laser_receiver_block_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2615.219 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.061 . Memory (MB): peak = 2721.672 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file laser_receiver_block_wrapper_utilization_placed.rpt -pb laser_receiver_block_wrapper_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file laser_receiver_block_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2615.219 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2721.672 ; gain = 0.000
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
 
 Starting Initial Update Timing Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.636 . Memory (MB): peak = 2625.516 ; gain = 10.297
-INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 0.00s |  WALL: 0.66s
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2625.516 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.664 . Memory (MB): peak = 2733.066 ; gain = 11.395
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 0.00s |  WALL: 0.69s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2733.066 ; gain = 0.000
 
 Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.508 | TNS=-2717.844 |
-Phase 1 Physical Synthesis Initialization | Checksum: 1cf3272f0
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.953 | TNS=-2371.311 |
+Phase 1 Physical Synthesis Initialization | Checksum: f82c4bde
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.437 . Memory (MB): peak = 2625.535 ; gain = 0.020
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.508 | TNS=-2717.844 |
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.526 . Memory (MB): peak = 2733.098 ; gain = 0.031
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.953 | TNS=-2371.311 |
 
 Phase 2 DSP Register Optimization
-INFO: [Physopt 32-457] Pass 1. Identified 9 candidate cells for DSP register optimization.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1. No change.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1__0. No change.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1. No change.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1__1. No change.
+INFO: [Physopt 32-457] Pass 1. Identified 11 candidate cells for DSP register optimization.
 INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1__1. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1__0. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1. No change.
 INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_2/inst/y_delay1__1. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_3/inst/y_delay1__1. No change.
 INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_1/inst/y_delay1__0. No change.
-INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1__1. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1__0. No change.
 INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1. No change.
+INFO: [Physopt 32-666] Processed cell laser_receiver_block_i/low_pass_filter_0/inst/y_delay1__1. No change.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2625.535 ; gain = 0.000
-Phase 2 DSP Register Optimization | Checksum: 1cf3272f0
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2733.098 ; gain = 0.000
+Phase 2 DSP Register Optimization | Checksum: f82c4bde
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2625.535 ; gain = 0.020
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2733.098 ; gain = 0.031
 
 Phase 3 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.508 | TNS=-2717.844 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[8]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[8]_i_1_psdsp_2
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[8]_i_1_psdsp_n_2. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.052 | TNS=-2717.250 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[1]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[1]_i_1_psdsp_1
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[1]_i_1_psdsp_n_1. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.026 | TNS=-2717.204 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[1]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[1]_i_1_psdsp_2
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[1]_i_1_psdsp_n_2. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.023 | TNS=-2717.201 |
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[1]_i_1_psdsp_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.953 | TNS=-2371.311 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[0].  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay_reg[0]
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.924 | TNS=-2370.753 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[6]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[6]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[6]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.819 | TNS=-2370.067 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[15]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[15]_i_1_psdsp_2
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[15]_i_1_psdsp_n_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.627 | TNS=-2369.499 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_2
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_n_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.607 | TNS=-2369.432 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[2].  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay_reg[2]
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.602 | TNS=-2369.422 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[3].  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay_reg[3]
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.601 | TNS=-2369.396 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.601 | TNS=-2369.391 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[1].  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay_reg[1]
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.597 | TNS=-2369.366 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[2].  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay_reg[2]
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.595 | TNS=-2369.232 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_n. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net laser_receiver_block_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0[1]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__277_carry__4_n_2. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__277_carry__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay01_in[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__3_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__277_carry__3_i_7_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.020 | TNS=-2715.909 |
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__3_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.595 | TNS=-2369.232 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__2_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.583 | TNS=-2368.512 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__4_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.571 | TNS=-2367.791 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__3_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__3_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__2_i_2_n_0.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__2_i_2
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__2_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.557 | TNS=-2361.671 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[7]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[7]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[7]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.545 | TNS=-2361.500 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[0]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[0]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[0]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.540 | TNS=-2361.478 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[5]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[5]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[5]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.531 | TNS=-2361.199 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[8]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[8]_i_1_psdsp_1
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[8]_i_1_psdsp_n_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.531 | TNS=-2360.676 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/data_out[8].  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay_reg[8]
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/data_out[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.530 | TNS=-2360.413 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[8]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[8]_i_1_psdsp_2
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[8]_i_1_psdsp_n_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.524 | TNS=-2360.174 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[0]_i_1_psdsp_n. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay01_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__983_carry__4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__983_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__929_carry__3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__929_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__929_carry__2_i_3_n_0.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__929_carry__2_i_3
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__929_carry__2_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.523 | TNS=-2360.078 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[5]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[5]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[5]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.519 | TNS=-2359.823 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[10]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[10]_i_1_psdsp_2
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[10]_i_1_psdsp_n_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.519 | TNS=-2359.677 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[2]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[2]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[2]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.519 | TNS=-2359.659 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[2]_i_1_psdsp_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay01_in[2].  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[2]_i_2
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay01_in[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.518 | TNS=-2359.126 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__983_carry__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__983_carry__3_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.509 | TNS=-2358.350 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[4]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[4]_i_1_psdsp_2
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[4]_i_1_psdsp_n_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.502 | TNS=-2358.034 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[5]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[5]_i_1_psdsp_1
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[5]_i_1_psdsp_n_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.500 | TNS=-2357.740 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[7]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[7]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[7]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.497 | TNS=-2357.576 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[1]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[1]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[1]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.492 | TNS=-2357.252 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[4]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[4]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[4]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.487 | TNS=-2357.026 |
 INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[3]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[3]_i_1_psdsp
 INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[3]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.017 | TNS=-2715.703 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/data_out[13].  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay_reg[13]
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/data_out[13]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.006 | TNS=-2715.002 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[8]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[8]_i_1_psdsp_1
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[8]_i_1_psdsp_n_1. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.996 | TNS=-2714.882 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[6]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[6]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[6]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.973 | TNS=-2714.683 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[7]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[7]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[7]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.970 | TNS=-2714.777 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[5]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[5]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[5]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.955 | TNS=-2714.450 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[10]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[10]_i_1_psdsp_2
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[10]_i_1_psdsp_n_2. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.955 | TNS=-2714.246 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[7]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[7]_i_1_psdsp_1
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[7]_i_1_psdsp_n_1. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.955 | TNS=-2714.233 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[7]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[7]_i_1_psdsp_2
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[7]_i_1_psdsp_n_2. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.947 | TNS=-2714.210 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[6]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[6]_i_1_psdsp_1
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[6]_i_1_psdsp_n_1. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.942 | TNS=-2714.146 |
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[7]_i_1_psdsp_n_1. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.484 | TNS=-2356.901 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[1]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[1]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[1]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.484 | TNS=-2356.710 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[1]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[1]_i_1_psdsp_2
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[1]_i_1_psdsp_n_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.483 | TNS=-2356.541 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[3]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[3]_i_1_psdsp_1
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[3]_i_1_psdsp_n_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.482 | TNS=-2356.463 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[14]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[14]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[14]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.479 | TNS=-2356.234 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[1]_i_1_psdsp_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__277_carry__4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__277_carry__4_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.475 | TNS=-2351.309 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[1]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[1]_i_1_psdsp_1
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[1]_i_1_psdsp_n_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.472 | TNS=-2351.267 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/data_out[11].  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay_reg[11]
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/data_out[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.470 | TNS=-2350.884 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[11]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[11]_i_1_psdsp_1
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[11]_i_1_psdsp_n_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.469 | TNS=-2350.507 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__2_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__1_i_1_n_0.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__1_i_1
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__1_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.454 | TNS=-2348.946 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[7]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[7]_i_1_psdsp_1
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[7]_i_1_psdsp_n_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.451 | TNS=-2348.885 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay00_in[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__630_carry__4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__630_carry__4_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.448 | TNS=-2346.317 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__983_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__983_carry__2_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.448 | TNS=-2346.317 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__983_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__983_carry__1_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.443 | TNS=-2346.295 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__3_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__2_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__0_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__0_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 25 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.437 | TNS=-2342.608 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[5]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[5]_i_1_psdsp_2
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[5]_i_1_psdsp_n_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.437 | TNS=-2342.442 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__929_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__929_carry__1_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__870_carry__1_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__870_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__870_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__870_carry_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.435 | TNS=-2342.282 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[11]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[11]_i_1_psdsp_2
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[11]_i_1_psdsp_n_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.433 | TNS=-2342.088 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[1]_i_1_psdsp_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay00_in[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__630_carry__4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__630_carry__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__630_carry__3_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.430 | TNS=-2342.032 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__630_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__630_carry__2_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.425 | TNS=-2341.538 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[10]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[10]_i_1_psdsp_1
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[10]_i_1_psdsp_n_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.417 | TNS=-2341.500 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/data_out[12].  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay_reg[12]
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/data_out[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.415 | TNS=-2341.289 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[14]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[14]_i_1_psdsp_1
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[14]_i_1_psdsp_n_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.412 | TNS=-2341.090 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[7]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[7]_i_1_psdsp_2
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[7]_i_1_psdsp_n_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.407 | TNS=-2341.070 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[3]_i_1_psdsp_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0[3]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__277_carry__4_n_2. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__277_carry__3_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__277_carry__2_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
 INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__277_carry__2_i_7_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.936 | TNS=-2713.834 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.404 | TNS=-2340.940 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[4].  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay_reg[4]
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.404 | TNS=-2340.731 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__630_carry__3_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__576_carry__2_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__576_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__576_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__576_carry__0_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__517_carry__0_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__517_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__517_carry_i_1_n_0.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__517_carry_i_1
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__517_carry_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.404 | TNS=-2339.960 |
 INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
 INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__277_carry__3_i_7_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.897 | TNS=-2709.670 |
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__277_carry__3_i_8_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__223_carry__2_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__223_carry__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__223_carry__0_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__223_carry_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__223_carry_i_4_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.894 | TNS=-2709.658 |
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__223_carry__1_i_4_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__164_carry__1_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__164_carry__0_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__164_carry_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__164_carry_i_6_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.864 | TNS=-2709.370 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[11]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[11]_i_1_psdsp_1
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[11]_i_1_psdsp_n_1. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.863 | TNS=-2709.086 |
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/data_out[9]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay01_in[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.401 | TNS=-2337.726 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[4]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[4]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[4]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.393 | TNS=-2337.656 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[7]_i_1_psdsp_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay0[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay0__277_carry__4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay0__277_carry__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay0__277_carry__3_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.392 | TNS=-2337.048 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[9]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[9]_i_1_psdsp
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[9]_i_1_psdsp_n. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.388 | TNS=-2336.868 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/data_out[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay01_in[10]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__983_carry__4_n_2. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__983_carry__3_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__983_carry__3_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__929_carry__2_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__929_carry__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__929_carry__0_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__929_carry__0_i_4_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__870_carry__0_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__870_carry_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__870_carry_i_1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__793_carry__3_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__793_carry__2_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__793_carry__2_i_5_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__793_carry__2_i_1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__3_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__983_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__929_carry__3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__929_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__929_carry__2_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__870_carry__2_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__870_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__870_carry__1_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__793_carry__4_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__793_carry__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__793_carry__3_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__4_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__3_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__2_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__1_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__1_i_3_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/p_0_in[9]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.861 | TNS=-2708.610 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[8]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[8]_i_1_psdsp_1
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[8]_i_1_psdsp_n_1. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.858 | TNS=-2708.542 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[11]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[11]_i_1_psdsp_2
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[11]_i_1_psdsp_n_2. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.856 | TNS=-2708.373 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[6]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[6]_i_1_psdsp_1
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[6]_i_1_psdsp_n_1. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.856 | TNS=-2708.203 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[13]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[13]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[13]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.855 | TNS=-2708.004 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/data_out[12].  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay_reg[12]
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/data_out[12]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.853 | TNS=-2707.808 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[6].  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay_reg[6]
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/data_out[6]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.846 | TNS=-2707.804 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__0_i_1_n_0.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__0_i_1
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.386 | TNS=-2336.512 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 13 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay01_in[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.376 | TNS=-2336.396 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__1_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__793_carry__5_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__793_carry__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__793_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__5_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 22 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__0_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.365 | TNS=-2334.835 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay0__277_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay0__277_carry__2_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.365 | TNS=-2334.028 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__630_carry__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__630_carry__3_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.363 | TNS=-2333.644 |
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[5]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[5]_i_1_psdsp_1
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[5]_i_1_psdsp_n_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.359 | TNS=-2333.584 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 25 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__517_carry_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.357 | TNS=-2332.175 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__870_carry__0_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.357 | TNS=-2332.175 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__870_carry_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.354 | TNS=-2332.150 |
 INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
 INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__277_carry__4_i_3_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.840 | TNS=-2706.756 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[12]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[12]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[12]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.839 | TNS=-2706.574 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[11]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[11]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[11]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.838 | TNS=-2706.324 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[5]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[5]_i_1_psdsp_1
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[5]_i_1_psdsp_n_1. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.834 | TNS=-2706.187 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[2]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[2]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[2]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.833 | TNS=-2705.950 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[13]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[13]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[13]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.830 | TNS=-2705.747 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[15]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[15]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[15]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.827 | TNS=-2705.712 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[8]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[8]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[8]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.822 | TNS=-2705.685 |
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__277_carry__4_i_3_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.822 | TNS=-2705.669 |
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__277_carry__2_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__223_carry__1_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__223_carry__0_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__223_carry__0_i_3_n_0.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__223_carry__0_i_3
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__223_carry__0_i_3_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.819 | TNS=-2702.745 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[14]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[14]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[14]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.818 | TNS=-2702.552 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.353 | TNS=-2329.504 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__929_carry__2_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__870_carry__2_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__870_carry__1_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__277_carry__3_i_5_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.817 | TNS=-2702.484 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[15]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[15]_i_1_psdsp_1
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[15]_i_1_psdsp_n_1. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.817 | TNS=-2702.340 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[15]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[15]_i_1_psdsp_2
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[15]_i_1_psdsp_n_2. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.817 | TNS=-2702.328 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[4]_i_1_psdsp_n_2.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[4]_i_1_psdsp_2
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[4]_i_1_psdsp_n_2. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.815 | TNS=-2702.110 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.814 | TNS=-2702.107 |
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[2]_i_1_psdsp_n. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__870_carry__1_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.349 | TNS=-2329.444 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__630_carry__4_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__576_carry__3_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__576_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__576_carry__2_i_3_n_0.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__576_carry__2_i_3
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__576_carry__2_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.349 | TNS=-2328.969 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__870_carry_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.346 | TNS=-2328.764 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_n. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net laser_receiver_block_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay00_in[2].  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[2]_i_4
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay00_in[2]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.813 | TNS=-2702.023 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[5]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[5]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[5]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.812 | TNS=-2702.021 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.811 | TNS=-2701.881 |
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[5]_i_1_psdsp_n. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay01_in[5]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__983_carry__4_n_2. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__983_carry__3_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__929_carry__2_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__929_carry__0_i_4_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__870_carry__0_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__870_carry_i_1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__793_carry__3_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__793_carry__2_i_5_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__793_carry__2_i_1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__3_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__1_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay0__707_carry__1_i_3_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/p_0_in[5]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.810 | TNS=-2701.657 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[4]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay[4]_i_1_psdsp_1
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[4]_i_1_psdsp_n_1. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.808 | TNS=-2701.519 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[0]_i_1_psdsp_n_1.  Re-placed instance laser_receiver_block_i/low_pass_filter_3/inst/y_delay[0]_i_1_psdsp_1
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[0]_i_1_psdsp_n_1. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.805 | TNS=-2701.219 |
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay[15]_i_1_psdsp_n_2. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay00_in[15]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__630_carry__4_n_2. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_3/inst/y_delay0__630_carry__3_i_7_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.805 | TNS=-2700.967 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[6]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_0/inst/y_delay[6]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_0/inst/y_delay[6]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.805 | TNS=-2700.765 |
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.805 | TNS=-2700.765 |
-Phase 3 Critical Path Optimization | Checksum: 21befb78c
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay01_in[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__3_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__2_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__1_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__793_carry__5_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__793_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__5_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/p_0_in[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay1__1_n_102. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.346 | TNS=-2328.764 |
+Phase 3 Critical Path Optimization | Checksum: f82c4bde
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2634.578 ; gain = 9.062
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2742.137 ; gain = 9.070
 
 Phase 4 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.805 | TNS=-2700.765 |
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[15]_i_1_psdsp_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.346 | TNS=-2328.764 |
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_n. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net laser_receiver_block_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay01_in[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay01_in[3]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__4_n_2. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__3_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__3_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__2_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__1_i_4_n_0.  Re-placed instance laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__1_i_4
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__1_i_4_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.804 | TNS=-2698.473 |
-INFO: [Physopt 32-663] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[12]_i_1_psdsp_n.  Re-placed instance laser_receiver_block_i/low_pass_filter_2/inst/y_delay[12]_i_1_psdsp
-INFO: [Physopt 32-735] Processed net laser_receiver_block_i/low_pass_filter_2/inst/y_delay[12]_i_1_psdsp_n. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.801 | TNS=-2698.309 |
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[1]_i_1_psdsp_n_2. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0[1]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__277_carry__4_n_2. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__277_carry__3_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__277_carry__3_i_8_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__223_carry__2_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__223_carry__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__223_carry__1_i_4_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__164_carry__1_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__164_carry__0_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__164_carry_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__164_carry_i_6_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__87_carry__3_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__87_carry__2_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__87_carry__2_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__87_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__1_carry__3_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__1_carry__2_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__1_carry__2_i_8_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-571] Net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__1_carry__2_i_4_n_0 was not replicated.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__1_carry__2_i_4_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/p_0_in[1]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay1_n_99. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay2_n_114. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[1]_i_1_psdsp_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__3_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__2_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__1_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__793_carry__5_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__793_carry__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__793_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__5_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/p_0_in[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay1__1_n_102. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay2__1_n_145. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay[3]_i_1_psdsp_n. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net laser_receiver_block_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0[1]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__277_carry__4_n_2. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__277_carry__3_i_8_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__223_carry__2_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__223_carry__1_i_4_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__164_carry__1_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__164_carry_i_6_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__87_carry__3_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__87_carry__2_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__87_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__1_carry__3_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__1_carry__2_i_8_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__1_carry__2_i_4_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/p_0_in[1]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay1_n_99. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.801 | TNS=-2698.309 |
-Phase 4 Critical Path Optimization | Checksum: 21befb78c
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay01_in[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__983_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__3_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__929_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__2_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__870_carry__1_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__793_carry__5_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__793_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry__5_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay0__707_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/p_0_in[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net laser_receiver_block_i/low_pass_filter_1/inst/y_delay1__1_n_102. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-9.346 | TNS=-2328.764 |
+Phase 4 Critical Path Optimization | Checksum: f82c4bde
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2634.578 ; gain = 9.062
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2634.578 ; gain = 0.000
-INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-10.801 | TNS=-2698.309 |
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2742.141 ; gain = 9.074
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2742.141 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-9.346 | TNS=-2328.764 |
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -831,25 +944,25 @@ Summary of Physical Synthesis Optimizations
 |  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 |  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:02  |
-|  Critical Path  |          0.707  |         19.535  |            0  |              0  |                    52  |           0  |           2  |  00:00:04  |
-|  Total          |          0.707  |         19.535  |            0  |              0  |                    52  |           0  |           3  |  00:00:05  |
+|  Critical Path  |          0.607  |         42.548  |            0  |              0  |                    74  |           0  |           2  |  00:00:04  |
+|  Total          |          0.607  |         42.548  |            0  |              0  |                    74  |           0  |           3  |  00:00:06  |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2634.578 ; gain = 0.000
-Ending Physical Synthesis Task | Checksum: 2543ab695
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2742.141 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1fc56859d
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2634.578 ; gain = 9.062
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2742.141 ; gain = 9.074
 INFO: [Common 17-83] Releasing license: Implementation
-403 Infos, 6 Warnings, 11 Critical Warnings and 0 Errors encountered.
+498 Infos, 11 Warnings, 16 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
-phys_opt_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2634.578 ; gain = 19.359
+phys_opt_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2742.141 ; gain = 20.469
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.518 . Memory (MB): peak = 2643.441 ; gain = 8.863
-INFO: [Common 17-1381] The checkpoint 'D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_physopt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2750.984 ; gain = 8.844
+INFO: [Common 17-1381] The checkpoint 'D:/Project/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -863,30 +976,30 @@ Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
 
 Phase 1 Build RT Design
-Checksum: PlaceDB: faab0744 ConstDB: 0 ShapeSum: ab2b04c3 RouteDB: 0
-Post Restoration Checksum: NetGraph: c7a6a578 NumContArr: 6c9f1e59 Constraints: 0 Timing: 0
-Phase 1 Build RT Design | Checksum: 13445c3d1
+Checksum: PlaceDB: caa1a25e ConstDB: 0 ShapeSum: ac2a41cf RouteDB: 0
+Post Restoration Checksum: NetGraph: adfe2967 NumContArr: 27982d0a Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: d5965671
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 2757.508 ; gain = 103.996
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2841.516 ; gain = 81.445
 
 Phase 2 Router Initialization
 
 Phase 2.1 Fix Topology Constraints
-Phase 2.1 Fix Topology Constraints | Checksum: 13445c3d1
+Phase 2.1 Fix Topology Constraints | Checksum: d5965671
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2764.105 ; gain = 110.594
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2848.156 ; gain = 88.086
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: 13445c3d1
+Phase 2.2 Pre Route Cleanup | Checksum: d5965671
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2764.105 ; gain = 110.594
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2848.156 ; gain = 88.086
  Number of Nodes with overlaps = 0
 
 Phase 2.3 Update Timing
-Phase 2.3 Update Timing | Checksum: 1714156af
+Phase 2.3 Update Timing | Checksum: b8ea5f5d
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2792.984 ; gain = 139.473
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.724| TNS=-2659.006| WHS=-0.243 | THS=-46.651|
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2877.543 ; gain = 117.473
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.237 | TNS=-2295.250| WHS=-0.146 | THS=-45.250|
 
 
 Router Utilization Summary
@@ -895,37 +1008,37 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 6443
+  Number of Failed Nets               = 6272
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 6443
+  Number of Unrouted Nets             = 6272
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 2 Router Initialization | Checksum: f8c1fdca
+Phase 2 Router Initialization | Checksum: 13682b1d0
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2805.953 ; gain = 152.441
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2889.285 ; gain = 129.215
 
 Phase 3 Initial Routing
 
 Phase 3.1 Global Routing
-Phase 3.1 Global Routing | Checksum: f8c1fdca
+Phase 3.1 Global Routing | Checksum: 13682b1d0
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2805.953 ; gain = 152.441
-Phase 3 Initial Routing | Checksum: 103ba2803
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2889.285 ; gain = 129.215
+Phase 3 Initial Routing | Checksum: 1160c0eca
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2805.953 ; gain = 152.441
-INFO: [Route 35-580] Design has 12 pins with tight setup and hold constraints.
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2889.285 ; gain = 129.215
+INFO: [Route 35-580] Design has 11 pins with tight setup and hold constraints.
 
 The top 5 pins with tight setup and hold constraints:
 
 +====================+===================+========================================================================+
 | Launch Setup Clock | Launch Hold Clock | Pin                                                                    |
 +====================+===================+========================================================================+
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_3/inst/y_delay[6]_i_1_psdsp_2/D |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_3/inst/y_delay_reg[3]/D         |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_3/inst/y_delay_reg[7]/D         |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_3/inst/y_delay_reg[1]/D         |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_3/inst/y_delay_reg[8]/D         |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_0/inst/y_delay[2]_i_1_psdsp_2/D |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_1/inst/y_delay[2]_i_1_psdsp_2/D |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_1/inst/y_delay_reg[7]/D         |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_0/inst/y_delay_reg[1]/D         |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_2/inst/y_delay_reg[15]/D        |
 +--------------------+-------------------+------------------------------------------------------------------------+
 
 File with complete list of pins: tight_setup_hold_pins.txt
@@ -934,103 +1047,86 @@ File with complete list of pins: tight_setup_hold_pins.txt
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 3073
- Number of Nodes with overlaps = 1365
- Number of Nodes with overlaps = 741
- Number of Nodes with overlaps = 365
- Number of Nodes with overlaps = 107
- Number of Nodes with overlaps = 48
- Number of Nodes with overlaps = 25
+ Number of Nodes with overlaps = 2822
+ Number of Nodes with overlaps = 1258
+ Number of Nodes with overlaps = 676
+ Number of Nodes with overlaps = 358
+ Number of Nodes with overlaps = 118
+ Number of Nodes with overlaps = 6
  Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-12.022| TNS=-2882.142| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.687| TNS=-2571.305| WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 13d4acbbf
+Phase 4.1 Global Iteration 0 | Checksum: efa14ccf
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2805.953 ; gain = 152.441
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 2889.285 ; gain = 129.215
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 1852
- Number of Nodes with overlaps = 895
- Number of Nodes with overlaps = 353
- Number of Nodes with overlaps = 176
- Number of Nodes with overlaps = 72
- Number of Nodes with overlaps = 57
- Number of Nodes with overlaps = 25
- Number of Nodes with overlaps = 8
- Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 1143
+ Number of Nodes with overlaps = 792
+ Number of Nodes with overlaps = 480
+ Number of Nodes with overlaps = 227
+ Number of Nodes with overlaps = 85
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 18
  Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-11.823| TNS=-2860.216| WHS=N/A    | THS=N/A    |
-
-Phase 4.2 Global Iteration 1 | Checksum: 1e383b0b9
-
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 2805.953 ; gain = 152.441
-
-Phase 4.3 Global Iteration 2
- Number of Nodes with overlaps = 1928
- Number of Nodes with overlaps = 853
- Number of Nodes with overlaps = 350
- Number of Nodes with overlaps = 175
- Number of Nodes with overlaps = 70
- Number of Nodes with overlaps = 22
- Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-11.912| TNS=-2877.259| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.730| TNS=-2552.540| WHS=N/A    | THS=N/A    |
 
-Phase 4.3 Global Iteration 2 | Checksum: 21135c41e
+Phase 4.2 Global Iteration 1 | Checksum: 17930373f
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 2814.625 ; gain = 161.113
-Phase 4 Rip-up And Reroute | Checksum: 21135c41e
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:02 . Memory (MB): peak = 2889.285 ; gain = 129.215
+Phase 4 Rip-up And Reroute | Checksum: 17930373f
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 2814.625 ; gain = 161.113
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:02 . Memory (MB): peak = 2889.285 ; gain = 129.215
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 201d4e0b6
+Phase 5.1.1 Update Timing | Checksum: 170636ef6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 2814.625 ; gain = 161.113
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-11.809| TNS=-2833.317| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:02 . Memory (MB): peak = 2889.285 ; gain = 129.215
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.572| TNS=-2538.561| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5.1 Delay CleanUp | Checksum: 1b613bbef
+Phase 5.1 Delay CleanUp | Checksum: 17ad34ad6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 2814.625 ; gain = 161.113
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:02 . Memory (MB): peak = 2889.285 ; gain = 129.215
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1b613bbef
+Phase 5.2 Clock Skew Optimization | Checksum: 17ad34ad6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 2814.625 ; gain = 161.113
-Phase 5 Delay and Skew Optimization | Checksum: 1b613bbef
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:02 . Memory (MB): peak = 2889.285 ; gain = 129.215
+Phase 5 Delay and Skew Optimization | Checksum: 17ad34ad6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 2814.625 ; gain = 161.113
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:02 . Memory (MB): peak = 2889.285 ; gain = 129.215
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 17aaafc4a
+Phase 6.1.1 Update Timing | Checksum: 1435de15d
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 2814.625 ; gain = 161.113
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-11.749| TNS=-2828.947| WHS=0.040  | THS=0.000  |
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:03 . Memory (MB): peak = 2889.285 ; gain = 129.215
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.542| TNS=-2529.471| WHS=0.044  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 1e9112852
+Phase 6.1 Hold Fix Iter | Checksum: f0655cbe
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 2814.625 ; gain = 161.113
-Phase 6 Post Hold Fix | Checksum: 1e9112852
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:03 . Memory (MB): peak = 2889.285 ; gain = 129.215
+Phase 6 Post Hold Fix | Checksum: f0655cbe
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 2814.625 ; gain = 161.113
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:03 . Memory (MB): peak = 2889.285 ; gain = 129.215
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.20959 %
-  Global Horizontal Routing Utilization  = 1.44346 %
+  Global Vertical Routing Utilization    = 1.27633 %
+  Global Horizontal Routing Utilization  = 1.61384 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -1041,10 +1137,10 @@ Router Utilization Summary
   Number of Node Overlaps             = 0
 
 Congestion Report
-North Dir 1x1 Area, Max Cong = 63.0631%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 48.6486%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 57.3529%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
+North Dir 1x1 Area, Max Cong = 61.2613%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 49.5495%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 63.2353%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 61.7647%, No Congested Regions.
 
 ------------------------------
 Reporting congestion hotspots
@@ -1066,56 +1162,56 @@ Direction: West
 Congested clusters found at Level 0
 Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
 
-Phase 7 Route finalize | Checksum: 240e0c141
+Phase 7 Route finalize | Checksum: f7e4ad53
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 2814.625 ; gain = 161.113
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:03 . Memory (MB): peak = 2889.285 ; gain = 129.215
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 240e0c141
+Phase 8 Verifying routed nets | Checksum: f7e4ad53
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 2814.625 ; gain = 161.113
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:03 . Memory (MB): peak = 2889.285 ; gain = 129.215
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1b917413a
+Phase 9 Depositing Routes | Checksum: 131d24e59
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 2814.625 ; gain = 161.113
+Time (s): cpu = 00:00:46 ; elapsed = 00:01:04 . Memory (MB): peak = 2889.285 ; gain = 129.215
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-11.749| TNS=-2828.947| WHS=0.040  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-10.542| TNS=-2529.471| WHS=0.044  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 1b917413a
+Phase 10 Post Router Timing | Checksum: 131d24e59
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:55 . Memory (MB): peak = 2814.625 ; gain = 161.113
+Time (s): cpu = 00:00:46 ; elapsed = 00:01:04 . Memory (MB): peak = 2889.285 ; gain = 129.215
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:55 . Memory (MB): peak = 2814.625 ; gain = 161.113
+Time (s): cpu = 00:00:46 ; elapsed = 00:01:04 . Memory (MB): peak = 2889.285 ; gain = 129.215
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-420 Infos, 7 Warnings, 11 Critical Warnings and 0 Errors encountered.
+514 Infos, 12 Warnings, 16 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:56 . Memory (MB): peak = 2814.625 ; gain = 171.184
+route_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:05 . Memory (MB): peak = 2889.285 ; gain = 138.301
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.561 . Memory (MB): peak = 2814.625 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_routed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2898.801 ; gain = 9.516
+INFO: [Common 17-1381] The checkpoint 'D:/Project/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file laser_receiver_block_wrapper_drc_routed.rpt -pb laser_receiver_block_wrapper_drc_routed.pb -rpx laser_receiver_block_wrapper_drc_routed.rpx
 Command: report_drc -file laser_receiver_block_wrapper_drc_routed.rpt -pb laser_receiver_block_wrapper_drc_routed.pb -rpx laser_receiver_block_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_drc_routed.rpt.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/Project/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_drc_routed.rpt.
 report_drc completed successfully
 INFO: [runtcl-4] Executing : report_methodology -file laser_receiver_block_wrapper_methodology_drc_routed.rpt -pb laser_receiver_block_wrapper_methodology_drc_routed.pb -rpx laser_receiver_block_wrapper_methodology_drc_routed.rpx
 Command: report_methodology -file laser_receiver_block_wrapper_methodology_drc_routed.rpt -pb laser_receiver_block_wrapper_methodology_drc_routed.pb -rpx laser_receiver_block_wrapper_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_methodology_drc_routed.rpt.
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/Project/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
 INFO: [runtcl-4] Executing : report_power -file laser_receiver_block_wrapper_power_routed.rpt -pb laser_receiver_block_wrapper_power_summary_routed.pb -rpx laser_receiver_block_wrapper_power_routed.rpx
 Command: report_power -file laser_receiver_block_wrapper_power_routed.rpt -pb laser_receiver_block_wrapper_power_summary_routed.pb -rpx laser_receiver_block_wrapper_power_routed.rpx
@@ -1123,7 +1219,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-432 Infos, 7 Warnings, 11 Critical Warnings and 0 Errors encountered.
+526 Infos, 12 Warnings, 16 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file laser_receiver_block_wrapper_route_status.rpt -pb laser_receiver_block_wrapper_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file laser_receiver_block_wrapper_timing_summary_routed.rpt -pb laser_receiver_block_wrapper_timing_summary_routed.pb -rpx laser_receiver_block_wrapper_timing_summary_routed.rpx -warn_on_violation 
@@ -1187,12 +1283,12 @@ Loading route data...
 Processing options...
 Creating bitmap...
 Creating bitstream...
-Bitstream compression saved 22098816 bits.
+Bitstream compression saved 23442464 bits.
 Writing bitstream ./laser_receiver_block_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
 12 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3303.707 ; gain = 468.887
-INFO: [Common 17-206] Exiting Vivado at Wed May 24 02:42:27 2023...
+write_bitstream: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3363.969 ; gain = 443.043
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  5 17:57:44 2023...

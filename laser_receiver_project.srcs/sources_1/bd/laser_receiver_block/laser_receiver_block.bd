@@ -1,13 +1,13 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xAE9DCDBF8BC382C4",
+      "boundary_crc": "0x584846FBE6959DE4",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block",
       "name": "laser_receiver_block",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
-      "synth_flow_mode": "Hierarchical",
-      "tool_version": "2022.2"
+      "synth_flow_mode": "None",
+      "tool_version": "2022.2.2"
     },
     "design_tree": {
       "processing_system7_0": "",
@@ -31,12 +31,12 @@
       "axi_gpio_4": "",
       "axi_gpio_6": "",
       "xlconcat_0": "",
-      "low_pass_filter_2": "",
-      "low_pass_filter_3": "",
-      "low_pass_filter_0": "",
-      "low_pass_filter_1": "",
       "axi_gpio_0": "",
       "axi_gpio_1": "",
+      "low_pass_filter_0": "",
+      "low_pass_filter_1": "",
+      "low_pass_filter_2": "",
+      "low_pass_filter_3": "",
       "ad7606c_0": ""
     },
     "interface_ports": {
@@ -112,6 +112,9 @@
       "adc_busy": {
         "direction": "I"
       },
+      "adc_wr": {
+        "direction": "O"
+      },
       "adc_db": {
         "direction": "IO",
         "left": "15",
@@ -126,25 +129,7 @@
       "adc_os1": {
         "direction": "O"
       },
-      "adc_wr": {
-        "direction": "O"
-      },
-      "led_blue": {
-        "direction": "O"
-      },
-      "led1": {
-        "direction": "O"
-      },
-      "led2": {
-        "direction": "O"
-      },
-      "led3": {
-        "direction": "O"
-      },
       "led_green": {
-        "direction": "O"
-      },
-      "led4": {
         "direction": "O"
       }
     },
@@ -1636,174 +1621,6 @@
         "xci_path": "ip\\laser_receiver_block_xlconcat_0_0\\laser_receiver_block_xlconcat_0_0.xci",
         "inst_hier_path": "xlconcat_0"
       },
-      "low_pass_filter_2": {
-        "vlnv": "xilinx.com:module_ref:low_pass_filter:1.0",
-        "xci_name": "laser_receiver_block_low_pass_filter_2_0",
-        "xci_path": "ip\\laser_receiver_block_low_pass_filter_2_0\\laser_receiver_block_low_pass_filter_2_0.xci",
-        "inst_hier_path": "low_pass_filter_2",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "low_pass_filter",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "laser_receiver_block_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "data_in": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "cutoff_sel": {
-            "direction": "I",
-            "left": "1",
-            "right": "0"
-          },
-          "data_out": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          }
-        }
-      },
-      "low_pass_filter_3": {
-        "vlnv": "xilinx.com:module_ref:low_pass_filter:1.0",
-        "xci_name": "laser_receiver_block_low_pass_filter_3_0",
-        "xci_path": "ip\\laser_receiver_block_low_pass_filter_3_0\\laser_receiver_block_low_pass_filter_3_0.xci",
-        "inst_hier_path": "low_pass_filter_3",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "low_pass_filter",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "laser_receiver_block_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "data_in": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "cutoff_sel": {
-            "direction": "I",
-            "left": "1",
-            "right": "0"
-          },
-          "data_out": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          }
-        }
-      },
-      "low_pass_filter_0": {
-        "vlnv": "xilinx.com:module_ref:low_pass_filter:1.0",
-        "xci_name": "laser_receiver_block_low_pass_filter_0_0",
-        "xci_path": "ip\\laser_receiver_block_low_pass_filter_0_0\\laser_receiver_block_low_pass_filter_0_0.xci",
-        "inst_hier_path": "low_pass_filter_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "low_pass_filter",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "laser_receiver_block_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "data_in": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "cutoff_sel": {
-            "direction": "I",
-            "left": "1",
-            "right": "0"
-          },
-          "data_out": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          }
-        }
-      },
-      "low_pass_filter_1": {
-        "vlnv": "xilinx.com:module_ref:low_pass_filter:1.0",
-        "xci_name": "laser_receiver_block_low_pass_filter_1_0",
-        "xci_path": "ip\\laser_receiver_block_low_pass_filter_1_0\\laser_receiver_block_low_pass_filter_1_0.xci",
-        "inst_hier_path": "low_pass_filter_1",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "low_pass_filter",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "laser_receiver_block_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "data_in": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "cutoff_sel": {
-            "direction": "I",
-            "left": "1",
-            "right": "0"
-          },
-          "data_out": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          }
-        }
-      },
       "axi_gpio_0": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "xci_name": "laser_receiver_block_axi_gpio_0_1",
@@ -1850,6 +1667,174 @@
           }
         }
       },
+      "low_pass_filter_0": {
+        "vlnv": "xilinx.com:module_ref:low_pass_filter:1.0",
+        "xci_name": "laser_receiver_block_low_pass_filter_0_0",
+        "xci_path": "ip\\laser_receiver_block_low_pass_filter_0_0\\laser_receiver_block_low_pass_filter_0_0.xci",
+        "inst_hier_path": "low_pass_filter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "low_pass_filter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "1e+08",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "laser_receiver_block_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "cutoff_sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "low_pass_filter_1": {
+        "vlnv": "xilinx.com:module_ref:low_pass_filter:1.0",
+        "xci_name": "laser_receiver_block_low_pass_filter_1_0",
+        "xci_path": "ip\\laser_receiver_block_low_pass_filter_1_0\\laser_receiver_block_low_pass_filter_1_0.xci",
+        "inst_hier_path": "low_pass_filter_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "low_pass_filter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "1e+08",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "laser_receiver_block_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "cutoff_sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "low_pass_filter_2": {
+        "vlnv": "xilinx.com:module_ref:low_pass_filter:1.0",
+        "xci_name": "laser_receiver_block_low_pass_filter_2_0",
+        "xci_path": "ip\\laser_receiver_block_low_pass_filter_2_0\\laser_receiver_block_low_pass_filter_2_0.xci",
+        "inst_hier_path": "low_pass_filter_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "low_pass_filter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "1e+08",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "laser_receiver_block_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "cutoff_sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "low_pass_filter_3": {
+        "vlnv": "xilinx.com:module_ref:low_pass_filter:1.0",
+        "xci_name": "laser_receiver_block_low_pass_filter_3_0",
+        "xci_path": "ip\\laser_receiver_block_low_pass_filter_3_0\\laser_receiver_block_low_pass_filter_3_0.xci",
+        "inst_hier_path": "low_pass_filter_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "low_pass_filter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "1e+08",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "laser_receiver_block_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "cutoff_sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
       "ad7606c_0": {
         "vlnv": "xilinx.com:module_ref:ad7606c:1.0",
         "xci_name": "laser_receiver_block_ad7606c_0_0",
@@ -1889,6 +1874,12 @@
             "type": "rst",
             "direction": "O"
           },
+          "adc_wr": {
+            "direction": "O"
+          },
+          "active": {
+            "direction": "O"
+          },
           "adc_sel": {
             "direction": "O"
           },
@@ -1899,12 +1890,6 @@
             "direction": "O"
           },
           "adc_os2": {
-            "direction": "O"
-          },
-          "adc_wr": {
-            "direction": "O"
-          },
-          "active": {
             "direction": "O"
           },
           "out_data1": {
@@ -1926,21 +1911,6 @@
             "direction": "O",
             "left": "15",
             "right": "0"
-          },
-          "led": {
-            "direction": "O"
-          },
-          "led1": {
-            "direction": "O"
-          },
-          "led2": {
-            "direction": "O"
-          },
-          "led3": {
-            "direction": "O"
-          },
-          "led4": {
-            "direction": "O"
           }
         }
       }
@@ -1999,10 +1969,10 @@
       "Net": {
         "ports": [
           "axi_gpio_4/gpio_io_o",
-          "low_pass_filter_2/cutoff_sel",
-          "low_pass_filter_3/cutoff_sel",
           "low_pass_filter_0/cutoff_sel",
-          "low_pass_filter_1/cutoff_sel"
+          "low_pass_filter_1/cutoff_sel",
+          "low_pass_filter_2/cutoff_sel",
+          "low_pass_filter_3/cutoff_sel"
         ]
       },
       "Net1": {
@@ -2069,36 +2039,6 @@
         "ports": [
           "ad7606c_0/adc_wr",
           "adc_wr"
-        ]
-      },
-      "ad7606c_0_led": {
-        "ports": [
-          "ad7606c_0/led",
-          "led_blue"
-        ]
-      },
-      "ad7606c_0_led1": {
-        "ports": [
-          "ad7606c_0/led1",
-          "led1"
-        ]
-      },
-      "ad7606c_0_led2": {
-        "ports": [
-          "ad7606c_0/led2",
-          "led2"
-        ]
-      },
-      "ad7606c_0_led3": {
-        "ports": [
-          "ad7606c_0/led3",
-          "led3"
-        ]
-      },
-      "ad7606c_0_led4": {
-        "ports": [
-          "ad7606c_0/led4",
-          "led4"
         ]
       },
       "ad7606c_0_out_data1": {

@@ -1,8 +1,8 @@
-//Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+//Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Wed May 24 02:38:00 2023
-//Host        : Chan running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2022.2.2 (win64) Build 3788238 Tue Feb 21 20:00:34 MST 2023
+//Date        : Mon Jun  5 17:52:20 2023
+//Host        : CHAN running 64-bit major release  (build 9200)
 //Command     : generate_target laser_receiver_block_wrapper.bd
 //Design      : laser_receiver_block_wrapper
 //Purpose     : IP block netlist
@@ -26,11 +26,6 @@ module laser_receiver_block_wrapper
     adc_sel,
     adc_wr,
     gain,
-    led1,
-    led2,
-    led3,
-    led4,
-    led_blue,
     led_green,
     uart_rtl_0_rxd,
     uart_rtl_0_txd);
@@ -50,11 +45,6 @@ module laser_receiver_block_wrapper
   output adc_sel;
   output adc_wr;
   output [0:0]gain;
-  output led1;
-  output led2;
-  output led3;
-  output led4;
-  output led_blue;
   output led_green;
   input uart_rtl_0_rxd;
   output uart_rtl_0_txd;
@@ -75,11 +65,6 @@ module laser_receiver_block_wrapper
   wire adc_sel;
   wire adc_wr;
   wire [0:0]gain;
-  wire led1;
-  wire led2;
-  wire led3;
-  wire led4;
-  wire led_blue;
   wire led_green;
   wire uart_rtl_0_rxd;
   wire uart_rtl_0_txd;
@@ -101,11 +86,6 @@ module laser_receiver_block_wrapper
         .adc_sel(adc_sel),
         .adc_wr(adc_wr),
         .gain(gain),
-        .led1(led1),
-        .led2(led2),
-        .led3(led3),
-        .led4(led4),
-        .led_blue(led_blue),
         .led_green(led_green),
         .uart_rtl_0_rxd(uart_rtl_0_rxd),
         .uart_rtl_0_txd(uart_rtl_0_txd));

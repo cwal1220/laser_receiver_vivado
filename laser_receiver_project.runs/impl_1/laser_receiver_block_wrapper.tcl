@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper.tcl"
+  variable script "D:/Project/laser_receiver_project/laser_receiver_project.runs/impl_1/laser_receiver_block_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,27 +123,27 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 4
+  set_param chipscope.maxJobs 2
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z020clg400-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.cache/wt [current_project]
-  set_property parent.project_path D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.xpr [current_project]
-  set_property ip_output_repo D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/Project/laser_receiver_project/laser_receiver_project.cache/wt [current_project]
+  set_property parent.project_path D:/Project/laser_receiver_project/laser_receiver_project.xpr [current_project]
+  set_property ip_output_repo D:/Project/laser_receiver_project/laser_receiver_project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.runs/synth_1/laser_receiver_block_wrapper.dcp
+  add_files -quiet D:/Project/laser_receiver_project/laser_receiver_project.runs/synth_1/laser_receiver_block_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/sources_1/bd/laser_receiver_block/laser_receiver_block.bd
+  add_files D:/Project/laser_receiver_project/laser_receiver_project.srcs/sources_1/bd/laser_receiver_block/laser_receiver_block.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/FPGA/workspace/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc
+  read_xdc D:/Project/laser_receiver_project/laser_receiver_project.srcs/constrs_1/new/laser_receiver.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

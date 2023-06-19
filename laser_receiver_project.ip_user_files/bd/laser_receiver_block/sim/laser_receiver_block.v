@@ -1,15 +1,15 @@
-//Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+//Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Wed May 24 01:57:17 2023
-//Host        : Chan running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2022.2.2 (win64) Build 3788238 Tue Feb 21 20:00:34 MST 2023
+//Date        : Mon Jun  5 17:52:20 2023
+//Host        : CHAN running 64-bit major release  (build 9200)
 //Command     : generate_target laser_receiver_block.bd
 //Design      : laser_receiver_block
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "laser_receiver_block,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=laser_receiver_block,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=26,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=11,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=11,da_board_cnt=1,da_clkrst_cnt=10,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "laser_receiver_block.hwdef" *) 
+(* CORE_GENERATION_INFO = "laser_receiver_block,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=laser_receiver_block,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=26,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=11,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=11,da_board_cnt=1,da_clkrst_cnt=11,da_ps7_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "laser_receiver_block.hwdef" *) 
 module laser_receiver_block
    (FIXED_IO_mio,
     FIXED_IO_ps_clk,
@@ -27,11 +27,6 @@ module laser_receiver_block
     adc_sel,
     adc_wr,
     gain,
-    led1,
-    led2,
-    led3,
-    led4,
-    led_blue,
     led_green,
     uart_rtl_0_rxd,
     uart_rtl_0_txd);
@@ -51,11 +46,6 @@ module laser_receiver_block
   output adc_sel;
   output adc_wr;
   output [0:0]gain;
-  output led1;
-  output led2;
-  output led3;
-  output led4;
-  output led_blue;
   output led_green;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_rtl_0 RxD" *) input uart_rtl_0_rxd;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_rtl_0 TxD" *) output uart_rtl_0_txd;
@@ -72,11 +62,6 @@ module laser_receiver_block
   wire ad7606c_0_adc_rst;
   wire ad7606c_0_adc_sel;
   wire ad7606c_0_adc_wr;
-  wire ad7606c_0_led;
-  wire ad7606c_0_led1;
-  wire ad7606c_0_led2;
-  wire ad7606c_0_led3;
-  wire ad7606c_0_led4;
   wire [15:0]ad7606c_0_out_data1;
   wire [15:0]ad7606c_0_out_data2;
   wire [15:0]ad7606c_0_out_data3;
@@ -236,11 +221,6 @@ module laser_receiver_block
   assign adc_wr = ad7606c_0_adc_wr;
   assign axi_uartlite_0_UART_RxD = uart_rtl_0_rxd;
   assign gain[0] = axi_gpio_4_gpio2_io_o;
-  assign led1 = ad7606c_0_led1;
-  assign led2 = ad7606c_0_led2;
-  assign led3 = ad7606c_0_led3;
-  assign led4 = ad7606c_0_led4;
-  assign led_blue = ad7606c_0_led;
   assign led_green = adc_busy_1;
   assign uart_rtl_0_txd = axi_uartlite_0_UART_TxD;
   laser_receiver_block_ad7606c_0_0 ad7606c_0
@@ -257,11 +237,6 @@ module laser_receiver_block
         .adc_sel(ad7606c_0_adc_sel),
         .adc_wr(ad7606c_0_adc_wr),
         .clk(processing_system7_0_FCLK_CLK0),
-        .led(ad7606c_0_led),
-        .led1(ad7606c_0_led1),
-        .led2(ad7606c_0_led2),
-        .led3(ad7606c_0_led3),
-        .led4(ad7606c_0_led4),
         .out_data1(ad7606c_0_out_data1),
         .out_data2(ad7606c_0_out_data2),
         .out_data3(ad7606c_0_out_data3),

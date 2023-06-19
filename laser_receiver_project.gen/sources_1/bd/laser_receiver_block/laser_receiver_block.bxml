@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root MajorVersion="0" MinorVersion="40">
-  <CompositeFile CompositeFileTopName="laser_receiver_block" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+  <CompositeFile CompositeFileTopName="laser_receiver_block" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1684863924"/>
-    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1684863924"/>
-    <Generation Name="SIMULATION" State="RESET" Timestamp="1684863924"/>
-    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1684863924"/>
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1685956319"/>
+    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1685956319"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1685956319"/>
+    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1685956319"/>
     <FileCollection Name="SOURCES" Type="SOURCES"/>
   </CompositeFile>
 </Root>

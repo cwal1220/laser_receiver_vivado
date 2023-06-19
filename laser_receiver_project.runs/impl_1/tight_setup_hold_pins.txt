@@ -1,16 +1,15 @@
 +====================+===================+========================================================================+
 | Launch Setup Clock | Launch Hold Clock | Pin                                                                    |
 +====================+===================+========================================================================+
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_3/inst/y_delay[6]_i_1_psdsp_2/D |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_3/inst/y_delay_reg[3]/D         |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_3/inst/y_delay_reg[7]/D         |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_3/inst/y_delay_reg[1]/D         |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_3/inst/y_delay_reg[8]/D         |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_1/inst/y_delay_reg[15]/D        |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_0/inst/y_delay[1]_i_1_psdsp/D   |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_3/inst/y_delay_reg[5]/D         |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_0/inst/y_delay_reg[2]/D         |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_0/inst/y_delay_reg[5]/D         |
-| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_1/inst/y_delay[13]_i_1_psdsp/D  |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_0/inst/y_delay[2]_i_1_psdsp_2/D |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_1/inst/y_delay[2]_i_1_psdsp_2/D |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_1/inst/y_delay_reg[7]/D         |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_0/inst/y_delay_reg[1]/D         |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_2/inst/y_delay_reg[15]/D        |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_0/inst/y_delay_reg[9]/D         |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_3/inst/y_delay_reg[4]/D         |
 | clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_1/inst/y_delay[11]_i_1_psdsp/D  |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_0/inst/y_delay_reg[3]/D         |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_1/inst/y_delay[15]_i_1_psdsp/D  |
+| clk_fpga_0         | clk_fpga_0        | laser_receiver_block_i/low_pass_filter_1/inst/y_delay[9]_i_1_psdsp/D   |
 +--------------------+-------------------+------------------------------------------------------------------------+

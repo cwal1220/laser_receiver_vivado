@@ -1,16 +1,16 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ipshared/ec67/hdl" --include "../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ipshared/ee60/hdl" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+verilog xil_defaultlib  --include "../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ipshared/ec67/hdl" --include "../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ipshared/ee60/hdl" --include "D:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../../laser_receiver_project.srcs/sources_1/imports/AD7606/low_pass_filter.v" \
 "../../../../laser_receiver_project.srcs/sources_1/imports/AD7606/AD7606.v" \
 "../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_processing_system7_0_0/sim/laser_receiver_block_processing_system7_0_0.v" \
 "../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_xbar_0/sim/laser_receiver_block_xbar_0.v" \
+"../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_auto_pc_0/sim/laser_receiver_block_auto_pc_0.v" \
 "../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_xlconcat_0_0/sim/laser_receiver_block_xlconcat_0_0.v" \
-"../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_2_0/sim/laser_receiver_block_low_pass_filter_2_0.v" \
-"../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_3_0/sim/laser_receiver_block_low_pass_filter_3_0.v" \
 "../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_0_0/sim/laser_receiver_block_low_pass_filter_0_0.v" \
 "../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_1_0/sim/laser_receiver_block_low_pass_filter_1_0.v" \
+"../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_2_0/sim/laser_receiver_block_low_pass_filter_2_0.v" \
+"../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_3_0/sim/laser_receiver_block_low_pass_filter_3_0.v" \
 "../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_ad7606c_0_0/sim/laser_receiver_block_ad7606c_0_0.v" \
-"../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/ip/laser_receiver_block_auto_pc_0/sim/laser_receiver_block_auto_pc_0.v" \
 "../../../../laser_receiver_project.ip_user_files/bd/laser_receiver_block/sim/laser_receiver_block.v" \
 "../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block/hdl/laser_receiver_block_wrapper.v" \
 

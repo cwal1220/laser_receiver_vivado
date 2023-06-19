@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:module_ref:low_pass_filter:1.0
 // IP Revision: 1
 
-(* X_CORE_INFO = "low_pass_filter,Vivado 2022.2" *)
+(* X_CORE_INFO = "low_pass_filter,Vivado 2022.2.2" *)
 (* CHECK_LICENSE_TYPE = "laser_receiver_block_low_pass_filter_1_0,low_pass_filter,{}" *)
-(* CORE_GENERATION_INFO = "laser_receiver_block_low_pass_filter_1_0,low_pass_filter,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=low_pass_filter,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,scale=1000,MODE_CUTOFF_OFF=00,MODE_CUTOFF_1KHZ=01,MODE_CUTOFF_5KHZ=10,MODE_CUTOFF_10KHZ=11}" *)
+(* CORE_GENERATION_INFO = "laser_receiver_block_low_pass_filter_1_0,low_pass_filter,{x_ipProduct=Vivado 2022.2.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=low_pass_filter,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,scale=1000,MODE_CUTOFF_OFF=00,MODE_CUTOFF_1KHZ=01,MODE_CUTOFF_5KHZ=10,MODE_CUTOFF_10KHZ=11,COEFF_A_1K=68,COEFF_B_1K=932,COEFF_A_5K=269,COEFF_B_5K=731,COEFF_A_10K=466,COEFF_B_10K=534}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module laser_receiver_block_low_pass_filter_1_0 (
@@ -62,7 +62,7 @@ module laser_receiver_block_low_pass_filter_1_0 (
   data_out
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN laser_receiver_block_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN laser_receiver_block_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 input wire [15 : 0] data_in;
@@ -74,7 +74,13 @@ output wire [15 : 0] data_out;
     .MODE_CUTOFF_OFF(2'B00),
     .MODE_CUTOFF_1KHZ(2'B01),
     .MODE_CUTOFF_5KHZ(2'B10),
-    .MODE_CUTOFF_10KHZ(2'B11)
+    .MODE_CUTOFF_10KHZ(2'B11),
+    .COEFF_A_1K(68),
+    .COEFF_B_1K(932),
+    .COEFF_A_5K(269),
+    .COEFF_B_5K(731),
+    .COEFF_A_10K(466),
+    .COEFF_B_10K(534)
   ) inst (
     .clk(clk),
     .data_in(data_in),

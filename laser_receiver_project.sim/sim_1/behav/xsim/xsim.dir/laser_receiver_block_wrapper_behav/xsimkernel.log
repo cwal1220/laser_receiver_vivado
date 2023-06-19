@@ -1,7 +1,4 @@
-Running: xsim.dir/laser_receiver_block_wrapper_behav/xsimk.exe -simmode gui -wdb laser_receiver_block_wrapper_behav.wdb -simrunnum 0 -socket 1265
+Running: xsim.dir/laser_receiver_block_wrapper_behav/xsimk.exe -simmode gui -wdb laser_receiver_block_wrapper_behav.wdb -simrunnum 0 -socket 54557
 Design successfully loaded
-Design Loading Memory Usage: 20808 KB (Peak: 20808 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 41308 KB (Peak: 41308 KB)
-Simulation CPU Usage: 5452 ms
+Design Loading Memory Usage: 20820 KB (Peak: 20820 KB)
+Design Loading CPU Usage: 0 ms

@@ -30,11 +30,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_recei
 # IP: bd/laser_receiver_block/ip/laser_receiver_block_xlconcat_0_0/laser_receiver_block_xlconcat_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_xlconcat_0_0 || ORIG_REF_NAME==laser_receiver_block_xlconcat_0_0} -quiet] -quiet
 
-# IP: bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_2_0/laser_receiver_block_low_pass_filter_2_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_low_pass_filter_2_0 || ORIG_REF_NAME==laser_receiver_block_low_pass_filter_2_0} -quiet] -quiet
+# IP: bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_gpio_0_1 || ORIG_REF_NAME==laser_receiver_block_axi_gpio_0_1} -quiet] -quiet
 
-# IP: bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_3_0/laser_receiver_block_low_pass_filter_3_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_low_pass_filter_3_0 || ORIG_REF_NAME==laser_receiver_block_low_pass_filter_3_0} -quiet] -quiet
+# IP: bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_gpio_1_1 || ORIG_REF_NAME==laser_receiver_block_axi_gpio_1_1} -quiet] -quiet
 
 # IP: bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_0_0/laser_receiver_block_low_pass_filter_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_low_pass_filter_0_0 || ORIG_REF_NAME==laser_receiver_block_low_pass_filter_0_0} -quiet] -quiet
@@ -42,11 +42,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_recei
 # IP: bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_1_0/laser_receiver_block_low_pass_filter_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_low_pass_filter_1_0 || ORIG_REF_NAME==laser_receiver_block_low_pass_filter_1_0} -quiet] -quiet
 
-# IP: bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_gpio_0_1 || ORIG_REF_NAME==laser_receiver_block_axi_gpio_0_1} -quiet] -quiet
+# IP: bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_2_0/laser_receiver_block_low_pass_filter_2_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_low_pass_filter_2_0 || ORIG_REF_NAME==laser_receiver_block_low_pass_filter_2_0} -quiet] -quiet
 
-# IP: bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_gpio_1_1 || ORIG_REF_NAME==laser_receiver_block_axi_gpio_1_1} -quiet] -quiet
+# IP: bd/laser_receiver_block/ip/laser_receiver_block_low_pass_filter_3_0/laser_receiver_block_low_pass_filter_3_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_low_pass_filter_3_0 || ORIG_REF_NAME==laser_receiver_block_low_pass_filter_3_0} -quiet] -quiet
 
 # IP: bd/laser_receiver_block/ip/laser_receiver_block_ad7606c_0_0/laser_receiver_block_ad7606c_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_ad7606c_0_0 || ORIG_REF_NAME==laser_receiver_block_ad7606c_0_0} -quiet] -quiet
@@ -54,4 +54,55 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_recei
 # IP: bd/laser_receiver_block/ip/laser_receiver_block_auto_pc_0/laser_receiver_block_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==laser_receiver_block_auto_pc_0 || ORIG_REF_NAME==laser_receiver_block_auto_pc_0} -quiet] -quiet
 
-# XDC: d:/FPGA/workspace/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/laser_receiver_block_ooc.xdc
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_processing_system7_0_0/laser_receiver_block_processing_system7_0_0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_processing_system7_0_0 || ORIG_REF_NAME==laser_receiver_block_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_uartlite_0_0/laser_receiver_block_axi_uartlite_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_uartlite_0_0 || ORIG_REF_NAME==laser_receiver_block_axi_uartlite_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_uartlite_0_0/laser_receiver_block_axi_uartlite_0_0_ooc.xdc
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_uartlite_0_0/laser_receiver_block_axi_uartlite_0_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_uartlite_0_0 || ORIG_REF_NAME==laser_receiver_block_axi_uartlite_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_rst_ps7_0_100M_0/laser_receiver_block_rst_ps7_0_100M_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_rst_ps7_0_100M_0 || ORIG_REF_NAME==laser_receiver_block_rst_ps7_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_rst_ps7_0_100M_0/laser_receiver_block_rst_ps7_0_100M_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_rst_ps7_0_100M_0 || ORIG_REF_NAME==laser_receiver_block_rst_ps7_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_4_0/laser_receiver_block_axi_gpio_4_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_gpio_4_0 || ORIG_REF_NAME==laser_receiver_block_axi_gpio_4_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_4_0/laser_receiver_block_axi_gpio_4_0_ooc.xdc
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_4_0/laser_receiver_block_axi_gpio_4_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_gpio_4_0 || ORIG_REF_NAME==laser_receiver_block_axi_gpio_4_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_6_0/laser_receiver_block_axi_gpio_6_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_gpio_6_0 || ORIG_REF_NAME==laser_receiver_block_axi_gpio_6_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_6_0/laser_receiver_block_axi_gpio_6_0_ooc.xdc
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_6_0/laser_receiver_block_axi_gpio_6_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_gpio_6_0 || ORIG_REF_NAME==laser_receiver_block_axi_gpio_6_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_gpio_0_1 || ORIG_REF_NAME==laser_receiver_block_axi_gpio_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1_ooc.xdc
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_0_1/laser_receiver_block_axi_gpio_0_1.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_gpio_0_1 || ORIG_REF_NAME==laser_receiver_block_axi_gpio_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_gpio_1_1 || ORIG_REF_NAME==laser_receiver_block_axi_gpio_1_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1_ooc.xdc
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_axi_gpio_1_1/laser_receiver_block_axi_gpio_1_1.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==laser_receiver_block_axi_gpio_1_1 || ORIG_REF_NAME==laser_receiver_block_axi_gpio_1_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_auto_pc_0/laser_receiver_block_auto_pc_0_ooc.xdc
+
+# XDC: d:/Project/laser_receiver_project/laser_receiver_project.gen/sources_1/bd/laser_receiver_block/laser_receiver_block_ooc.xdc

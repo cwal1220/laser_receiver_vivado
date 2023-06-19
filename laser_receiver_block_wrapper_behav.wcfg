@@ -16,38 +16,18 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="9.882354 us"></ZoomEndTime>
-      <Cursor1Time time="4.861140 us"></Cursor1Time>
+      <ZoomStartTime time="308,999.884 ns"></ZoomStartTime>
+      <ZoomEndTime time="309,585.285 ns"></ZoomEndTime>
+      <Cursor1Time time="309,523.468 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="383"></NameColumnWidth>
-      <ValueColumnWidth column_width="186"></ValueColumnWidth>
+      <NameColumnWidth column_width="152"></NameColumnWidth>
+      <ValueColumnWidth column_width="93"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="22" />
-   <wvobject fp_name="/laser_receiver_block_wrapper/FIXED_IO_mio" type="array">
-      <obj_property name="ElementShortName">FIXED_IO_mio[53:0]</obj_property>
-      <obj_property name="ObjectShortName">FIXED_IO_mio[53:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/FIXED_IO_ps_clk" type="logic">
-      <obj_property name="ElementShortName">FIXED_IO_ps_clk</obj_property>
-      <obj_property name="ObjectShortName">FIXED_IO_ps_clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/FIXED_IO_ps_porb" type="logic">
-      <obj_property name="ElementShortName">FIXED_IO_ps_porb</obj_property>
-      <obj_property name="ObjectShortName">FIXED_IO_ps_porb</obj_property>
-   </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/FIXED_IO_ps_srstb" type="logic">
-      <obj_property name="ElementShortName">FIXED_IO_ps_srstb</obj_property>
-      <obj_property name="ObjectShortName">FIXED_IO_ps_srstb</obj_property>
-   </wvobject>
+   <WVObjectSize size="14" />
    <wvobject fp_name="/laser_receiver_block_wrapper/adc_busy" type="logic">
       <obj_property name="ElementShortName">adc_busy</obj_property>
       <obj_property name="ObjectShortName">adc_busy</obj_property>
-   </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/adc_convst" type="logic">
-      <obj_property name="ElementShortName">adc_convst</obj_property>
-      <obj_property name="ObjectShortName">adc_convst</obj_property>
    </wvobject>
    <wvobject fp_name="/laser_receiver_block_wrapper/adc_db" type="array">
       <obj_property name="ElementShortName">adc_db[15:0]</obj_property>
@@ -65,52 +45,40 @@
       <obj_property name="ElementShortName">adc_os2</obj_property>
       <obj_property name="ObjectShortName">adc_os2</obj_property>
    </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/adc_wr" type="logic">
-      <obj_property name="ElementShortName">adc_wr</obj_property>
-      <obj_property name="ObjectShortName">adc_wr</obj_property>
-   </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/adc_cs" type="logic">
-      <obj_property name="ElementShortName">adc_cs</obj_property>
-      <obj_property name="ObjectShortName">adc_cs</obj_property>
+   <wvobject fp_name="/laser_receiver_block_wrapper/adc_rst" type="logic">
+      <obj_property name="ElementShortName">adc_rst</obj_property>
+      <obj_property name="ObjectShortName">adc_rst</obj_property>
    </wvobject>
    <wvobject fp_name="/laser_receiver_block_wrapper/adc_rd" type="logic">
       <obj_property name="ElementShortName">adc_rd</obj_property>
       <obj_property name="ObjectShortName">adc_rd</obj_property>
    </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/adc_rst" type="logic">
-      <obj_property name="ElementShortName">adc_rst</obj_property>
-      <obj_property name="ObjectShortName">adc_rst</obj_property>
+   <wvobject fp_name="/laser_receiver_block_wrapper/adc_cs" type="logic">
+      <obj_property name="ElementShortName">adc_cs</obj_property>
+      <obj_property name="ObjectShortName">adc_cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/laser_receiver_block_wrapper/adc_wr" type="logic">
+      <obj_property name="ElementShortName">adc_wr</obj_property>
+      <obj_property name="ObjectShortName">adc_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/laser_receiver_block_wrapper/adc_convst" type="logic">
+      <obj_property name="ElementShortName">adc_convst</obj_property>
+      <obj_property name="ObjectShortName">adc_convst</obj_property>
    </wvobject>
    <wvobject fp_name="/laser_receiver_block_wrapper/adc_sel" type="logic">
       <obj_property name="ElementShortName">adc_sel</obj_property>
       <obj_property name="ObjectShortName">adc_sel</obj_property>
    </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/gain" type="array">
-      <obj_property name="ElementShortName">gain[0:0]</obj_property>
-      <obj_property name="ObjectShortName">gain[0:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/led_blue" type="array">
-      <obj_property name="ElementShortName">led_blue[0:0]</obj_property>
-      <obj_property name="ObjectShortName">led_blue[0:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/uart_rtl_0_rxd" type="logic">
-      <obj_property name="ElementShortName">uart_rtl_0_rxd</obj_property>
-      <obj_property name="ObjectShortName">uart_rtl_0_rxd</obj_property>
-   </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/uart_rtl_0_txd" type="logic">
-      <obj_property name="ElementShortName">uart_rtl_0_txd</obj_property>
-      <obj_property name="ObjectShortName">uart_rtl_0_txd</obj_property>
-   </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/laser_receiver_block_i/ad7606c_0/inst/start" type="logic">
-      <obj_property name="ElementShortName">start</obj_property>
-      <obj_property name="ObjectShortName">start</obj_property>
-   </wvobject>
    <wvobject fp_name="/laser_receiver_block_wrapper/laser_receiver_block_i/ad7606c_0/inst/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/laser_receiver_block_wrapper/laser_receiver_block_i/ad7606c_0/inst/adc_busy" type="logic">
-      <obj_property name="ElementShortName">adc_busy</obj_property>
-      <obj_property name="ObjectShortName">adc_busy</obj_property>
+   <wvobject fp_name="/laser_receiver_block_wrapper/laser_receiver_block_i/ad7606c_0/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/laser_receiver_block_wrapper/laser_receiver_block_i/ad7606c_0/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
    </wvobject>
 </wave_config>

@@ -1,8 +1,8 @@
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Wed May 24 02:42:16 2023
-| Host             : Chan running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2022.2.2 (win64) Build 3788238 Tue Feb 21 20:00:34 MST 2023
+| Date             : Mon Jun  5 17:57:29 2023
+| Host             : CHAN running 64-bit major release  (build 9200)
 | Command          : report_power -file laser_receiver_block_wrapper_power_routed.rpt -pb laser_receiver_block_wrapper_power_summary_routed.pb -rpx laser_receiver_block_wrapper_power_routed.rpx
 | Design           : laser_receiver_block_wrapper
 | Device           : xc7z020clg400-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.856        |
+| Total On-Chip Power (W)  | 0.845        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.737        |
+| Dynamic (W)              | 0.725        |
 | Device Static (W)        | 0.120        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 75.1         |
-| Junction Temperature (C) | 34.9         |
+| Max Ambient (C)          | 75.3         |
+| Junction Temperature (C) | 34.7         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,20 +52,20 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.012 |        3 |       --- |             --- |
-| Slice Logic             |     0.036 |     7065 |       --- |             --- |
-|   LUT as Logic          |     0.033 |     3070 |     53200 |            5.77 |
-|   CARRY4                |     0.003 |      518 |     13300 |            3.89 |
-|   Register              |    <0.001 |     1956 |    106400 |            1.84 |
-|   F7/F8 Muxes           |    <0.001 |        1 |     53200 |           <0.01 |
+| Clocks                  |     0.010 |        3 |       --- |             --- |
+| Slice Logic             |     0.034 |     6786 |       --- |             --- |
+|   LUT as Logic          |     0.030 |     3349 |     53200 |            6.30 |
+|   CARRY4                |     0.003 |      502 |     13300 |            3.77 |
+|   Register              |    <0.001 |     1898 |    106400 |            1.78 |
 |   LUT as Shift Register |    <0.001 |       72 |     17400 |            0.41 |
-|   Others                |     0.000 |      270 |       --- |             --- |
-| Signals                 |     0.038 |     6313 |       --- |             --- |
-| DSPs                    |     0.012 |       24 |       220 |           10.91 |
-| I/O                     |     0.008 |       35 |       125 |           28.00 |
+|   F7/F8 Muxes           |    <0.001 |        1 |     53200 |           <0.01 |
+|   Others                |     0.000 |      267 |       --- |             --- |
+| Signals                 |     0.040 |     6142 |       --- |             --- |
+| DSPs                    |     0.011 |       24 |       220 |           10.91 |
+| I/O                     |     0.001 |       30 |       125 |           24.00 |
 | PS7                     |     0.630 |        1 |       --- |             --- |
 | Static Power            |     0.120 |          |           |                 |
-| Total                   |     0.856 |          |           |                 |
+| Total                   |     0.845 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,9 +75,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.109 |       0.098 |      0.010 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.013 |       0.000 |      0.012 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.104 |       0.094 |      0.010 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.012 |       0.000 |      0.012 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -151,28 +151,24 @@ Table of Contents
 +------------------------------+-----------+
 | Name                         | Power (W) |
 +------------------------------+-----------+
-| laser_receiver_block_wrapper |     0.737 |
-|   laser_receiver_block_i     |     0.728 |
-|     ad7606c_0                |     0.001 |
-|       inst                   |     0.001 |
-|     axi_gpio_0               |     0.003 |
-|       U0                     |     0.003 |
-|     axi_gpio_1               |     0.003 |
-|       U0                     |     0.003 |
-|     axi_uartlite_0           |     0.001 |
-|       U0                     |     0.001 |
+| laser_receiver_block_wrapper |     0.725 |
+|   laser_receiver_block_i     |     0.724 |
+|     axi_gpio_0               |     0.002 |
+|       U0                     |     0.002 |
+|     axi_gpio_1               |     0.002 |
+|       U0                     |     0.002 |
 |     low_pass_filter_0        |     0.020 |
 |       inst                   |     0.020 |
 |     low_pass_filter_1        |     0.021 |
 |       inst                   |     0.021 |
 |     low_pass_filter_2        |     0.020 |
 |       inst                   |     0.020 |
-|     low_pass_filter_3        |     0.021 |
-|       inst                   |     0.021 |
+|     low_pass_filter_3        |     0.020 |
+|       inst                   |     0.020 |
 |     processing_system7_0     |     0.630 |
 |       inst                   |     0.630 |
 |     ps7_0_axi_periph         |     0.006 |
-|       s00_couplers           |     0.005 |
+|       s00_couplers           |     0.004 |
 |       xbar                   |     0.001 |
 +------------------------------+-----------+
 

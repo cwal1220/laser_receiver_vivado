@@ -294,7 +294,7 @@
         "OUTPUTDIR": [ { "value": "../../../../../../laser_receiver_project.gen/sources_1/bd/laser_receiver_block/ip/laser_receiver_block_xlconcat_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2022.2" } ],
+        "SWVERSION": [ { "value": "2022.2.2" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },

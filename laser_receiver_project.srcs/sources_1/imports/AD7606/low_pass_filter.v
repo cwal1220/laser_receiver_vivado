@@ -17,8 +17,15 @@ module low_pass_filter(
 	reg [15:0] x_delay = 16'h0; // 입력 지연 레지스터
 	reg [15:0] y_delay = 16'h0; // 출력 지연 레지스터
 
-	integer COEFF_A ;
-	integer COEFF_B;
+	parameter COEFF_A_1K = 68;//0.060898633 * scale;
+	parameter COEFF_B_1K = 932;//(1*scale) - COEFF_A_1K;
+	
+	parameter COEFF_A_5K = 269;//0.269597309 * scale;
+	parameter COEFF_B_5K = 731;//(1*scale) - COEFF_A_5K;
+	
+	parameter COEFF_A_10K = 466;//0.466511909 * scale;
+	parameter COEFF_B_10K = 534;//(1*scale) - COEFF_A_10K;
+
 	integer result;
 
 	// 필터 계수 계산
@@ -28,33 +35,29 @@ module low_pass_filter(
 
 	always @(posedge clk) begin
 		case (cutoff_sel)
-			MODE_CUTOFF_OFF: begin
+			MODE_CUTOFF_OFF: 
+            begin
 				y_delay <= data_in;
-				end
-			MODE_CUTOFF_1KHZ: begin
-				COEFF_A = 0.060898633 * scale; // 1Khz
-				COEFF_B = (1*scale) - COEFF_A;
-				x_delay <= data_in;
-				result = (COEFF_A * x_delay + COEFF_B * y_delay) / scale;
-				y_delay <= result;
-				end
-			MODE_CUTOFF_5KHZ: begin
-				COEFF_A = 0.269597309 * scale; // 5khz
-				COEFF_B = (1*scale) - COEFF_A; // 계수 B 갱신
-				x_delay <= data_in;
-				result = (COEFF_A * x_delay + COEFF_B * y_delay) / scale;
-				y_delay <= result;
-				end
-			MODE_CUTOFF_10KHZ: begin
-				COEFF_A = 0.466511909 * scale; // 10khz
-				COEFF_B = (1*scale) - COEFF_A; // 계수 B 갱신
-				x_delay <= data_in;
-				result = (COEFF_A * x_delay + COEFF_B * y_delay) / scale;
-				y_delay <= result;
-				end
-		endcase
+            end
 
-		
+			MODE_CUTOFF_1KHZ: 
+            begin
+				x_delay <= data_in;
+				y_delay <= (COEFF_A_1K * x_delay + COEFF_B_1K * y_delay) / scale;
+            end
+			
+            MODE_CUTOFF_5KHZ: 
+            begin
+				x_delay <= data_in;
+				y_delay <= (COEFF_A_5K * x_delay + COEFF_B_5K * y_delay) / scale;
+            end
+
+			MODE_CUTOFF_10KHZ: 
+            begin
+				x_delay <= data_in;
+				y_delay <= (COEFF_A_10K * x_delay + COEFF_B_10K * y_delay) / scale;
+            end
+		endcase
 	end
 	assign data_out = y_delay;
 endmodule

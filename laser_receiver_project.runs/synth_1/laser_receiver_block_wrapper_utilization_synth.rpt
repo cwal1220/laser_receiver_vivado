@@ -1,8 +1,8 @@
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Wed May 24 02:39:25 2023
-| Host         : Chan running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2022.2.2 (win64) Build 3788238 Tue Feb 21 20:00:34 MST 2023
+| Date         : Mon Jun  5 17:54:33 2023
+| Host         : CHAN running 64-bit major release  (build 9200)
 | Command      : report_utilization -file laser_receiver_block_wrapper_utilization_synth.rpt -pb laser_receiver_block_wrapper_utilization_synth.pb
 | Design       : laser_receiver_block_wrapper
 | Device       : xc7z020clg400-1
@@ -28,18 +28,20 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+-------------------------+------+-------+------------+-----------+-------+
-|        Site Type        | Used | Fixed | Prohibited | Available | Util% |
-+-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |    0 |     0 |          0 |     53200 |  0.00 |
-|   LUT as Logic          |    0 |     0 |          0 |     53200 |  0.00 |
-|   LUT as Memory         |    0 |     0 |          0 |     17400 |  0.00 |
-| Slice Registers         |    0 |     0 |          0 |    106400 |  0.00 |
-|   Register as Flip Flop |    0 |     0 |          0 |    106400 |  0.00 |
-|   Register as Latch     |    0 |     0 |          0 |    106400 |  0.00 |
-| F7 Muxes                |    0 |     0 |          0 |     26600 |  0.00 |
-| F8 Muxes                |    0 |     0 |          0 |     13300 |  0.00 |
-+-------------------------+------+-------+------------+-----------+-------+
++----------------------------+------+-------+------------+-----------+-------+
+|          Site Type         | Used | Fixed | Prohibited | Available | Util% |
++----------------------------+------+-------+------------+-----------+-------+
+| Slice LUTs*                | 3488 |     0 |          0 |     53200 |  6.56 |
+|   LUT as Logic             | 3404 |     0 |          0 |     53200 |  6.40 |
+|   LUT as Memory            |   84 |     0 |          0 |     17400 |  0.48 |
+|     LUT as Distributed RAM |    0 |     0 |            |           |       |
+|     LUT as Shift Register  |   84 |     0 |            |           |       |
+| Slice Registers            | 1706 |     0 |          0 |    106400 |  1.60 |
+|   Register as Flip Flop    | 1706 |     0 |          0 |    106400 |  1.60 |
+|   Register as Latch        |    0 |     0 |          0 |    106400 |  0.00 |
+| F7 Muxes                   |    1 |     0 |          0 |     26600 | <0.01 |
+| F8 Muxes                   |    0 |     0 |          0 |     13300 |  0.00 |
++----------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
 
@@ -58,8 +60,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 0     |          Yes |         Set |            - |
-| 0     |          Yes |       Reset |            - |
+| 110   |          Yes |         Set |            - |
+| 1596  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -79,11 +81,12 @@ Warning! LUT value is adjusted to account for LUT combining.
 3. DSP
 ------
 
-+-----------+------+-------+------------+-----------+-------+
-| Site Type | Used | Fixed | Prohibited | Available | Util% |
-+-----------+------+-------+------------+-----------+-------+
-| DSPs      |    0 |     0 |          0 |       220 |  0.00 |
-+-----------+------+-------+------------+-----------+-------+
++----------------+------+-------+------------+-----------+-------+
+|    Site Type   | Used | Fixed | Prohibited | Available | Util% |
++----------------+------+-------+------------+-----------+-------+
+| DSPs           |   24 |     0 |          0 |       220 | 10.91 |
+|   DSP48E1 only |   24 |       |            |           |       |
++----------------+------+-------+------------+-----------+-------+
 
 
 4. IO and GT Specific
@@ -92,9 +95,9 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   19 |     0 |          0 |       125 | 15.20 |
+| Bonded IOB                  |   30 |     0 |          0 |       125 | 24.00 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
-| Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
+| Bonded IOPADs               |   57 |     0 |          0 |       130 | 43.85 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         4 |  0.00 |
 | PHASER_REF                  |    0 |     0 |          0 |         4 |  0.00 |
 | OUT_FIFO                    |    0 |     0 |          0 |        16 |  0.00 |
@@ -115,7 +118,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCTRL   |    0 |     0 |          0 |        32 |  0.00 |
+| BUFGCTRL   |    1 |     0 |          0 |        32 |  3.13 |
 | BUFIO      |    0 |     0 |          0 |        16 |  0.00 |
 | MMCME2_ADV |    0 |     0 |          0 |         4 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |          0 |         4 |  0.00 |
@@ -145,35 +148,37 @@ Warning! LUT value is adjusted to account for LUT combining.
 7. Primitives
 -------------
 
-+----------+------+---------------------+
-| Ref Name | Used | Functional Category |
-+----------+------+---------------------+
-| OBUF     |   17 |                  IO |
-| IBUF     |    2 |                  IO |
-+----------+------+---------------------+
++----------+------+----------------------+
+| Ref Name | Used |  Functional Category |
++----------+------+----------------------+
+| FDRE     | 1596 |         Flop & Latch |
+| LUT3     | 1138 |                  LUT |
+| LUT6     | 1065 |                  LUT |
+| LUT2     |  652 |                  LUT |
+| LUT5     |  618 |                  LUT |
+| LUT4     |  531 |                  LUT |
+| CARRY4   |  502 |           CarryLogic |
+| BIBUF    |  130 |                   IO |
+| FDSE     |  110 |         Flop & Latch |
+| LUT1     |   70 |                  LUT |
+| SRLC32E  |   47 |   Distributed Memory |
+| SRL16E   |   37 |   Distributed Memory |
+| DSP48E1  |   24 |     Block Arithmetic |
+| IBUF     |   18 |                   IO |
+| OBUFT    |   16 |                   IO |
+| OBUF     |   12 |                   IO |
+| PS7      |    1 | Specialized Resource |
+| MUXF7    |    1 |                MuxFx |
+| BUFG     |    1 |                Clock |
++----------+------+----------------------+
 
 
 8. Black Boxes
 --------------
 
-+---------------------------------------------+------+
-|                   Ref Name                  | Used |
-+---------------------------------------------+------+
-| laser_receiver_block_xbar_0                 |    1 |
-| laser_receiver_block_rst_ps7_0_100M_0       |    1 |
-| laser_receiver_block_processing_system7_0_0 |    1 |
-| laser_receiver_block_low_pass_filter_3_0    |    1 |
-| laser_receiver_block_low_pass_filter_2_0    |    1 |
-| laser_receiver_block_low_pass_filter_1_0    |    1 |
-| laser_receiver_block_low_pass_filter_0_0    |    1 |
-| laser_receiver_block_axi_uartlite_0_0       |    1 |
-| laser_receiver_block_axi_gpio_6_0           |    1 |
-| laser_receiver_block_axi_gpio_4_0           |    1 |
-| laser_receiver_block_axi_gpio_1_1           |    1 |
-| laser_receiver_block_axi_gpio_0_1           |    1 |
-| laser_receiver_block_auto_pc_0              |    1 |
-| laser_receiver_block_ad7606c_0_0            |    1 |
-+---------------------------------------------+------+
++----------+------+
+| Ref Name | Used |
++----------+------+
 
 
 9. Instantiated Netlists
